@@ -34,15 +34,8 @@
     <i class="iconic iconic-close" id="mobileNav2"></i>
   </div>
   <ul>
-    <li class="menu-item-has-children"><a href="#">Home</a>
-      <ul class="sub-menu">
-        <li><a href="index.html">Default Layout</a></li>
-        <li><a href="home-2.html">Home v2</a></li>
-        <li><a href="home-3.html">Home v3</a></li>
-        <li><a href="home-4.html">Home v4</a></li>
-      </ul>
-    </li>
-    <li class="menu-item-has-children"><a href="#">Properties</a>
+    <li class="menu-item-has-children"><a href="{{url('/')}}">Home</a></li>
+    <li class="menu-item-has-children"><a href="{{url('/properties')}}">Properties</a>
     <ul class="sub-menu">
       <li><a href="property-list.html">Property List</a>
       <ul class="sub-menu">

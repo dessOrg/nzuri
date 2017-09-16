@@ -441,9 +441,9 @@
   <div class="container">
     <div class="title-row heading">
       <div class="col-md-12">
-        <h2>Your dream <br>
-        homes</h2>
-        <p>Your search result IS listed here</p>
+        <h2>WELCOME TO NZURI  <br>
+        HOMES</h2>
+        <p>For Your Dream Home</p>
         <span class="iconic iconic-search"></span>
       </div>
     </div>
@@ -558,138 +558,7 @@
 
       </div>
       <!-- Grid view // -->
-       <div class="col-xs-12 pad-top-large">
-      <p class="content-info"><span class="iconic iconic-menu"></span>list view</p>
-      </div>
-      <!-- List view -->
-      <div class="list-view-all row-float">
-        <div class="grid-list">
-        <div class="background">
-          <a class="image" href="#">
-          <span class="box-type">Sale</span>
-            <img src="images/property-list/home-1.jpg" alt="">
-          </a>
-          <div class="description">
-            <h3><span class="type">Appertment:</span>
-            5111 140th Ave NE Bellevue,
-            WA 98005</h3>
-            <span class="price">$75000</span>
-          </div>
-          </div>
-        </div>
-        <div class="grid-list">
-        <div class="background">
-          <a class="image" href="#">
-          <span class="box-type">Sale</span>
-            <img src="images/property-list/home-1.jpg" alt="">
-          </a>
-          <div class="description">
-            <h3><span class="type">Appertment:</span>
-            5111 140th Ave NE Bellevue,
-            WA 98005</h3>
-            <span class="price">$75000</span>
-          </div>
-          </div>
-        </div>
-        <div class="grid-list">
-        <div class="background">
-          <a class="image" href="#">
-          <span class="box-type red">Rent</span>
-            <img src="images/property-list/home-1.jpg" alt="">
-          </a>
-          <div class="description">
-            <h3><span class="type">Appertment:</span>
-            5111 140th Ave NE Bellevue,
-            WA 98005</h3>
-            <span class="price">$75000</span>
-          </div>
-          </div>
-        </div>
-        <div class="grid-list">
-        <div class="background">
-          <a class="image" href="#">
-          <span class="box-type red">Rent</span>
-            <img src="images/property-list/home-1.jpg" alt="">
-          </a>
-          <div class="description">
-            <h3><span class="type">Appertment:</span>
-            5111 140th Ave NE Bellevue,
-            WA 98005</h3>
-            <span class="price">$75000</span>
-          </div>
-          </div>
-        </div>
-        <div class="grid-list">
-        <div class="background">
-          <a class="image" href="#">
-          <span class="box-type">Sale</span>
-            <img src="images/property-list/home-2.jpg" alt="">
-          </a>
-          <div class="description">
-            <h3><span class="type">Appertment:</span>
-            5111 140th Ave NE Bellevue,
-            WA 98005</h3>
-            <span class="price">$75000</span>
-          </div>
-          </div>
-        </div>
-        <div class="grid-list">
-        <div class="background">
-          <a class="image" href="#">
-          <span class="box-type red">Rent</span>
-            <img src="images/property-list/home-3.jpg" alt="">
-          </a>
-          <div class="description">
-            <h3><span class="type">Appertment:</span>
-            5111 140th Ave NE Bellevue,
-            WA 98005</h3>
-            <span class="price">$75000</span>
-          </div>
-          </div>
-        </div>
-        <div class="grid-list">
-        <div class="background">
-          <a class="image" href="#">
-          <span class="box-type red">Rent</span>
-            <img src="images/property-list/home-4.jpg" alt="">
-          </a>
-          <div class="description">
-            <h3><span class="type">Appertment:</span>
-            5111 140th Ave NE Bellevue,
-            WA 98005</h3>
-            <span class="price">$75000</span>
-          </div>
-          </div>
-        </div>
-        <div class="grid-list">
-        <div class="background">
-          <a class="image" href="#">
-          <span class="box-type red">Rent</span>
-            <img src="images/property-list/home-5.jpg" alt="">
-          </a>
-          <div class="description">
-            <h3><span class="type">Appertment:</span>
-            5111 140th Ave NE Bellevue,
-            WA 98005</h3>
-            <span class="price">$75000</span>
-          </div>
-          </div>
-        </div>
-        <div class="grid-list">
-        <div class="background">
-          <a class="image" href="#">
-          <span class="box-type red">Rent</span>
-            <img src="images/property-list/home-6.jpg" alt="">
-          </a>
-          <div class="description">
-            <h3><span class="type">Appertment:</span>
-            5111 140th Ave NE Bellevue,
-            WA 98005</h3>
-            <span class="price">$75000</span>
-          </div>
-          </div>
-        </div>
-      </div>
+
       <div class="pad-top-small col-xs-12">
         <a href="#" class="btn btn-danger btn-large pull-right hvr-shutter-out-vertical">View more results</a>
       </div>
@@ -713,7 +582,7 @@
     </div>
     <div class="col-md-6 col-md-push-1">
       <div class="heading pad-top-large">
-        <h4>Dream Homes</h4>
+        <h4>NZURI Homes</h4>
       </div>
       <div class="contents">
       <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
@@ -770,38 +639,7 @@
 </section>
 <!-- Content Section //  -->
 <!-- Content Section  -->
-<section class="content-section">
-  <div class="container">
-    <div class="background">
-    <div class="col-md-4">
-      <div class="title-row heading">
-     <div class="col-sm-12">
-      <h2>find us <br>
-anywhere!
-      </h2>
-      <p>with your smart phone and tablets</p>
-      <span class="iconic iconic-mobile"></span>
-      </div>
-    </div>
-    </div>
-    <div class="col-md-8">
-      <div class="row">
-        <div class="col-md-3"><img src="images/components/mobile.png" height="572" width="205" alt=""></div>
-        <div class="col-md-9">
-        <div class="heading pad-top-large">
-        <h4>Download
-        our latest app</h4>
-        </div>
-        <div class="contents">
-        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
-        <p><a href="#" class="btn btn-large btn-ghost hvr-shutter-out-vertical">Download now</a></p>
-        </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </div>
-</section>
+
 <!-- Content Section // -->
 <!-- Team -->
 <section class="content-section">

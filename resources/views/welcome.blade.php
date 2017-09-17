@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+
  @include('partials.nav')
 
 <!-- Content Section -->
@@ -461,8 +462,8 @@
 <!-- Footer 2 -->
 <footer class="footer-sub">
 <div class="container">
-  <div class="footer-text-1"><p>© 2014 Dream Homes</p></div>
-  <div class="footer-text-2 text-right"><p>Design by <a href="http://0effortthemes.com/">0effortthemes</a></p></div>
+  <div class="footer-text-1"><p>© 2017 Dream Homes</p></div>
+  <div class="footer-text-2 text-right"><p>Design by <a href="https://desshub.github.io/">desshub</a></p></div>
 </div>
 </footer>
 @endsection

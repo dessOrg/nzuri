@@ -2,7 +2,7 @@
 
 @section('content')
 
-
+ @include('partials.nav')
 <!-- Page layout -->
 <section class="content-section">
 <div class="container">

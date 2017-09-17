@@ -407,7 +407,7 @@
 </div>
 <!-- sidebar // -->
 <!-- Header  -->
-<header class="main-header header-home" style="background-image: url(images/banner/banner-7.jpg)">
+<header class="main-header header-common" style="background-image: url(images/banner/banner-7.jpg)">
   <img src="images/banner/banner-7.jpg" class="banner-img" alt="">
   <div class="header-content">
   <div class="navigation-bar"><div class="container">

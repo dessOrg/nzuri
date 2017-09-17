@@ -408,7 +408,7 @@
 <!-- sidebar // -->
 <!-- Header  -->
 <header class="main-header header-home" style="background-image: url(images/banner/banner-7.jpg)">
-  <img src="images/banner/banner-7.jpg" height="707" width="1920" class="banner-img" alt="">
+  <img src="images/banner/banner-7.jpg" class="banner-img" alt="">
   <div class="header-content">
   <div class="navigation-bar"><div class="container">
       <div class="logo wow flipInX" data-wow-delay="200ms">

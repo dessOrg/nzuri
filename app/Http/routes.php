@@ -1,5 +1,18 @@
 <?php
+namespace App\Http\Controllers;
 
+use App\User;
+use App\Property;
+use App\Callery;
+use Validator;
+use Auth;
+use App\Http\Requests;
+use Request;
+use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Redirect;
+use Mail;
+use Storage;
+use Searchy;
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -11,15 +24,16 @@
 |
 */
 
-Route::get('/', function () {
+$this->get('/', function () {
     return view('welcome');
 });
 
-Route::get('/properties', function () {
-    return view('properties');
+$this->get('/properties', function () {
+  $name = Property::get();
+    return view('properties')->with('properties', $name);
 });
 
-Route::get('/property', function () {
+$this->get('/property', function () {
     return view('property');
 });
 

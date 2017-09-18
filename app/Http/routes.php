@@ -19,6 +19,10 @@ Route::get('/properties', function () {
     return view('properties');
 });
 
+Route::get('/property', function () {
+    return view('property');
+});
+
 Route::auth();
 
 Route::get('/home', 'HomeController@index');

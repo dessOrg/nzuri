@@ -27,7 +27,7 @@ class HomeController extends Controller
         return view('home');
     }
 
-    private function add()
+    public function add()
     {
       return view('add');
     }

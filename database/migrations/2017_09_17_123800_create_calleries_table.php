@@ -14,7 +14,7 @@ class CreateCalleriesTable extends Migration
     {
         Schema::create('calleries', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('property-id');
+            $table->string('property_id');
             $table->string('image')->unique();
             $table->rememberToken();
             $table->timestamps();

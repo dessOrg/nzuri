@@ -12,7 +12,7 @@ class Callery extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'property-id', 'image'
+        'property_id', 'image'
     ];
 
     /**

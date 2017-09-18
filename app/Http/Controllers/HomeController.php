@@ -95,7 +95,7 @@ class HomeController extends Controller
 
 
           $imag = new Callery();
-          $imag->property-id = $property->id;
+          $imag->property_id = $property->id;
           $imag->image = $filePath;
           $imag->save();
 

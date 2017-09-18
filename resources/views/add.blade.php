@@ -28,7 +28,7 @@
                  </select>
                </div>
                </div>
-                 <div class="col-md-3">
+                 <div class="col-md-2">
                  <div class="form-group{{ $errors->has('type') ? ' has-error' : '' }}">
                    <select class="form-control" id="type" name="type" required="true" value="{{ old('type') }}" style="">
                      <option value="">Property Types</option>

@@ -125,7 +125,7 @@
   </ul>
   </li>
   @else
-  <li class="menu-item-has-children"><a href="#">{{Auth::user()->fname}}</a>
+  <li class="menu-item-has-children"><a href="#">{{Auth::user()->name}}</a>
   <ul class="dir-right level-1 sub-menu">
   <li><a href="{{ url('/logout')}}">Logout</a></li>
   </ul>

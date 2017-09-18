@@ -23,6 +23,7 @@ Route::get('/property', function () {
     return view('property');
 });
 
-Route::auth();
+$this::auth();
 
-Route::get('/home', 'HomeController@index');
+$this::get('/home', 'HomeController@index');
+$this::get('/add-form', 'HomeController@add');

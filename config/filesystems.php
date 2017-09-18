@@ -58,7 +58,7 @@ return [
             'driver' => 's3',
             'key' => 'AKIAIBE33SYHZ2F5U2EQ',
             'secret' => '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',
-            'region' => 'eu-west-2',
+            'region' => 'eu-west-1',
             'bucket' => 'nzuri',
         ],
 

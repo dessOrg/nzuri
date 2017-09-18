@@ -2,8 +2,18 @@
 
 @section('content')
  @include('partials.nav')
-
-<div class="container">
+ <section class="content-section">
+ <div class="container">
+   <ol class="breadcrumb">
+         <li><a href="#">Home</a></li>
+         <li><a href="#">Page</a></li>
+         <li class="active">Login</li>
+   </ol>
+   <div class="title-row heading">
+     <div class="col-md-12">
+       <h1>Login Here</h1>
+     </div>
+   </div>
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
@@ -65,4 +75,5 @@
         </div>
     </div>
 </div>
+</section>
 @endsection

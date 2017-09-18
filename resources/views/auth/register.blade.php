@@ -2,11 +2,21 @@
 
 @section('content')
  @include('partials.nav')
-<div class="container">
+ <section class="content-section">
+ <div class="container">
+   <ol class="breadcrumb">
+         <li><a href="#">Home</a></li>
+         <li><a href="#">Page</a></li>
+         <li class="active">Register</li>
+   </ol>
+   <div class="title-row heading">
+     <div class="col-md-12">
+       <h1>Sign Up Form</h1>
+     </div>
+   </div>
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Register</div>
                 <div class="panel-body">
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
                         {{ csrf_field() }}
@@ -20,6 +30,20 @@
                                 @if ($errors->has('name'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('name') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('phone') ? ' has-error' : '' }}">
+                            <label for="phone" class="col-md-4 control-label">Phone Number</label>
+
+                            <div class="col-md-6">
+                                <input id="phone" type="text" class="form-control" name="phone" value="{{ old('phone') }}">
+
+                                @if ($errors->has('phone'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('phone') }}</strong>
                                     </span>
                                 @endif
                             </div>
@@ -80,4 +104,5 @@
         </div>
     </div>
 </div>
+</section>
 @endsection

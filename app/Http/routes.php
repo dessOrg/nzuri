@@ -27,4 +27,4 @@ $this->auth();
 
 $this->get('/home', 'HomeController@index');
 $this->get('/add-form', 'HomeController@add');
-$tnis->post('/add', 'HomeController@createhome');
+$this->post('/add', 'HomeController@createhome');

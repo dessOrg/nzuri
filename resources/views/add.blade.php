@@ -16,18 +16,27 @@
    </div>
 
    <div class="form-content form-cotent-map">
-         <form class="form-1"  role="form" method="POST" action="{{ url('/addappert') }}" enctype="multipart/form-data">
+         <form class="form-1"  role="form" method="POST" action="{{ url('/add') }}" enctype="multipart/form-data">
            {{ csrf_field() }}
              <div class="row pad-top-large">
                <div class="col-md-3">
                <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                  <select class="form-control" id="category" name="category" required="true" value="{{ old('category') }}" style="">
-                   <option value="">Property Types</option>
+                   <option value="">Property Category</option>
                    <option value="Appertment">Appertment</option>
                    <option value="House">House</option>
                  </select>
                </div>
                </div>
+                 <div class="col-md-3">
+                 <div class="form-group{{ $errors->has('type') ? ' has-error' : '' }}">
+                   <select class="form-control" id="type" name="type" required="true" value="{{ old('type') }}" style="">
+                     <option value="">Property Types</option>
+                     <option value="Appertment">Appertment</option>
+                     <option value="House">House</option>
+                   </select>
+                 </div>
+                 </div>
                <div class="col-md-3">
                <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                 <select class="form-control" id="location" name="location" required="true" value="{{ old('location') }}" style="">
@@ -65,21 +74,21 @@
                  </select>
                </div>
                </div>
-               <div class="col-md-2">
-               <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                 <select class="form-control" id="parking" name="parking" required="true" value="{{ old('parking') }}">
-                   <option value="">Parking</option>
-                   <option value="0">0</option>
-                   <option value="1">1</option>
-                   <option value="2">2</option>
-                   <option value="3">3</option>
-                   <option value="4">4</option>
-                   <option value="5">5</option>
-                 </select>
-               </div>
-               </div>
              </div>
              <div class="row">
+             <div class="col-md-2">
+             <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+               <select class="form-control" id="parking" name="parking" required="true" value="{{ old('parking') }}">
+                 <option value="">Parking</option>
+                 <option value="0">0</option>
+                 <option value="1">1</option>
+                 <option value="2">2</option>
+                 <option value="3">3</option>
+                 <option value="4">4</option>
+                 <option value="5">5</option>
+               </select>
+             </div>
+             </div>
                <div class="col-md-2">
                <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                    <input id="address" type="text" class="form-control" name="address" value="{{ old('address') }}" placeholder="Address/Street" required="true">
@@ -113,7 +122,7 @@
                    @endif
                </div>
                </div>
-                 <div class="col-md-3">
+                 <div class="col-md-2">
                  <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                      <input id="size" type="text" class="form-control" name="size" value="{{ old('size') }}" placeholder="Size In Sqr feet" required="true">
 
@@ -124,7 +133,7 @@
                      @endif
                  </div>
                  </div>
-                   <div class="col-md-3">
+                   <div class="col-md-2">
                    <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                        <input class="form-control" type="file" name="image" required="true">
 
@@ -139,7 +148,7 @@
                <div class="row">
                  <div class="col-md-5">
                  <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                     <textarea id="description" class="form-control ckeditor" name="description"></textarea>
+                     <textarea id="description" class="form-control ckeditor" name="description" placeholder="Description of the property."></textarea>
 
                         @if ($errors->has('description'))
                           <span class="help-block">

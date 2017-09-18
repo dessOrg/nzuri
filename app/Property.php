@@ -12,7 +12,7 @@ class Property extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'title', 'category', 'type', 'user_id', 'image', 'bed', 'parking', 'bath','size', 'description', 'status', 'price', 'street', 'town', 'location',
+        'category', 'type', 'user_id', 'image', 'bed', 'parking', 'bath','size', 'description', 'status', 'price', 'street', 'town', 'location',
     ];
 
     /**

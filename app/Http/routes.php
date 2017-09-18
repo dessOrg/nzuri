@@ -23,7 +23,8 @@ Route::get('/property', function () {
     return view('property');
 });
 
-$this::auth();
+$this->auth();
 
-$this::get('/home', 'HomeController@index');
-$this::get('/add-form', 'HomeController@add');
+$this->get('/home', 'HomeController@index');
+$this->get('/add-form', 'HomeController@add');
+$tnis->post('/add', 'HomeController@createhome');

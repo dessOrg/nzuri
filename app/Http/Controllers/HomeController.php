@@ -44,7 +44,7 @@ class HomeController extends Controller
              'category' => 'required|max:200',
              'type' => 'required|max:200',
              'price' => 'required|max:200',
-             'description' => 'required|max:300',
+             'description' => 'required|max:1000',
              'address' => 'required|max:100',
              'town' => 'required|max:200',
              'size' => 'required|max:100',

@@ -23,8 +23,8 @@
                <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                  <select class="form-control" id="category" name="category" required="true" value="{{ old('category') }}" style="">
                    <option value="">Property Category</option>
-                   <option value="Appertment">Appertment</option>
-                   <option value="House">House</option>
+                   <option value="Appertment">Houses/Appertments</option>
+                   <option value="Cottages">Cottages</option>
                  </select>
                </div>
                </div>
@@ -32,8 +32,8 @@
                  <div class="form-group{{ $errors->has('type') ? ' has-error' : '' }}">
                    <select class="form-control" id="type" name="type" required="true" value="{{ old('type') }}" style="">
                      <option value="">Property Types</option>
-                     <option value="Appertment">Appertment</option>
-                     <option value="House">House</option>
+                     <option value="Rent">Rent</option>
+                     <option value="Sale">For Sale</option>
                    </select>
                  </div>
                  </div>

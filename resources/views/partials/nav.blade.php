@@ -31,6 +31,20 @@
     <li><a href="agents-details.html">Agent Details</a></li>
   </ul>
   </li>
+  @if(Auth::guest())
+  <li class="menu-item-has-children"><a href="#">Account</a>
+  <ul class="dir-right level-1 sub-menu">
+  <li><a href="{{ url('/login')}}">Login</a></li>
+  <li><a href="{{ url('/register')}}">Register</a></li>
+  </ul>
+  </li>
+  @else
+  <li class="menu-item-has-children"><a href="#">{{Auth::user()->fname}}</a>
+  <ul class="dir-right level-1 sub-menu">
+  <li><a href="{{ url('/logout')}}">Logout</a></li>
+  </ul>
+  </li>
+  @endif
 </ul>
 
 
@@ -103,6 +117,20 @@
     <li><a href="agents-details.html">Agent Details</a></li>
   </ul>
   </li>
+  @if(Auth::guest())
+  <li class="menu-item-has-children"><a href="#">Account</a>
+  <ul class="dir-right level-1 sub-menu">
+  <li><a href="{{ url('/login')}}">Login</a></li>
+  <li><a href="{{ url('/register')}}">Register</a></li>
+  </ul>
+  </li>
+  @else
+  <li class="menu-item-has-children"><a href="#">{{Auth::user()->fname}}</a>
+  <ul class="dir-right level-1 sub-menu">
+  <li><a href="{{ url('/logout')}}">Logout</a></li>
+  </ul>
+  </li>
+  @endif
 </ul>
 
     </div>

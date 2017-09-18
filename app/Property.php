@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class User extends Authenticatable
+class Property extends Authenticatable
 {
     /**
      * The attributes that are mass assignable.
@@ -12,7 +12,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'phone', 'password',
+        'title', 'category', 'type', 'user_id', 'image', 'bed', 'parking', 'bath','size', 'description', 'status', 'price', 'street', 'town', 'location',
     ];
 
     /**
@@ -21,6 +21,6 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        //
     ];
 }

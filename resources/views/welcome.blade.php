@@ -43,6 +43,7 @@
             <a class="link-arrow iconic iconic-arrow-forward" href="{{ url('/property'.$key->id)}}">View</a>
           </div>
         </div>
+        @endforeach
 
       </div>
       <!-- Grid view // -->

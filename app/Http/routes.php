@@ -25,7 +25,8 @@ use Searchy;
 */
 
 $this->get('/', function () {
-    return view('welcome');
+    $name = Property::get();
+    return view('welcome')->with('properties', $name);
 });
 
 $this->get('/properties', function () {

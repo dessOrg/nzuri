@@ -21,106 +21,26 @@
       </div>
       <!-- Grid view -->
       <div class="grid-box-all row-float pad-top-large">
+        @foreach($properties as $key)
         <div class="grid-box wow fadeInUp2" data-wow-delay="500ms">
           <div class="image">
+            @if($key->type === "Sale")
           <span class="box-type"><span class="text">Sale</span></span>
-            <img src="images/property/home-1.jpg" alt="" height="234" width="360">
-          </div>
-          <div class="description">
-            <h3><span class="type">Appertment:</span>
-            5111 140th Ave NE Bellevue,
-            WA 98005</h3>
-            <p class="meta-list"><span class="meta">Bed : 3</span>
-              <span class="meta"> Parking : 1 </span>
-              <span class="meta">   Bath : 1 </span>
-              <span class="meta">   1500 sq ft</span></p>
-            <span class="price">$75000</span>
-            <a class="link-arrow iconic iconic-arrow-forward" href="{{ url('/property')}}"></a>
-          </div>
-        </div>
-        <div class="grid-box wow fadeInUp2" data-wow-delay="600ms">
-          <div class="image">
-          <span class="box-type"><span class="text">Rent</span></span>
-            <img src="images/property/home-2.jpg" alt="" height="234" width="360">
-          </div>
-          <div class="description">
-            <h3><span class="type">Appertment:</span>
-            5111 140th Ave NE Bellevue,
-            WA 98005</h3>
-            <p class="meta-list"><span class="meta">Bed : 3</span>
-              <span class="meta"> Parking : 1 </span>
-              <span class="meta">   Bath : 1 </span>
-              <span class="meta">   1500 sq ft</span></p>
-            <span class="price">$75000</span>
-            <a class="link-arrow iconic iconic-arrow-forward" href="#"></a>
-          </div>
-        </div>
-        <div class="grid-box wow fadeInUp2" data-wow-delay="700ms">
-          <div class="image">
+          @else
           <span class="box-type red"><span class="text">Rent</span></span>
-            <img src="images/property/home-3.jpg" alt="" height="234" width="360">
+          @endif
+            <img src="https://s3.eu-west-1.amazonaws.com/nzuri{{ $propery->image}}" alt="" height="234" width="360">
           </div>
           <div class="description">
-            <h3><span class="type">Appertment:</span>
-            5111 140th Ave NE Bellevue,
-            WA 98005</h3>
-            <p class="meta-list"><span class="meta">Bed : 3</span>
-              <span class="meta"> Parking : 1 </span>
-              <span class="meta">   Bath : 1 </span>
-              <span class="meta">   1500 sq ft</span></p>
-            <span class="price">$75000</span>
-            <a class="link-arrow iconic iconic-arrow-forward" href="#"></a>
-          </div>
-        </div>
-        <div class="grid-box wow fadeInUp2" data-wow-delay="500ms">
-          <div class="image">
-          <span class="box-type"><span class="text">Sale</span></span>
-            <img src="images/property/home-1.jpg" alt="" height="234" width="360">
-          </div>
-          <div class="description">
-            <h3><span class="type">Appertment:</span>
-            5111 140th Ave NE Bellevue,
-            WA 98005</h3>
-            <p class="meta-list"><span class="meta">Bed : 3</span>
-              <span class="meta"> Parking : 1 </span>
-              <span class="meta">   Bath : 1 </span>
-              <span class="meta">   1500 sq ft</span></p>
-            <span class="price">$75000</span>
-            <a class="link-arrow iconic iconic-arrow-forward" href="#"></a>
-          </div>
-        </div>
-        <div class="grid-box wow fadeInUp2" data-wow-delay="600ms">
-          <div class="image">
-          <span class="box-type"><span class="text">Rent</span></span>
-            <img src="images/property/home-2.jpg" alt="" height="234" width="360">
-          </div>
-          <div class="description">
-            <h3><span class="type">Appertment:</span>
-            5111 140th Ave NE Bellevue,
-            WA 98005</h3>
-            <p class="meta-list"><span class="meta">Bed : 3</span>
-              <span class="meta"> Parking : 1 </span>
-              <span class="meta">   Bath : 1 </span>
-              <span class="meta">   1500 sq ft</span></p>
-            <span class="price">$75000</span>
-            <a class="link-arrow iconic iconic-arrow-forward" href="#"></a>
-          </div>
-        </div>
-        <div class="grid-box wow fadeInUp2" data-wow-delay="700ms">
-          <div class="image">
-          <span class="box-type red"><span class="text">Rent</span></span>
-            <img src="images/property/home-3.jpg" alt="" height="234" width="360">
-          </div>
-          <div class="description">
-            <h3><span class="type">Appertment:</span>
-            5111 140th Ave NE Bellevue,
-            WA 98005</h3>
-            <p class="meta-list"><span class="meta">Bed : 3</span>
-              <span class="meta"> Parking : 1 </span>
-              <span class="meta">   Bath : 1 </span>
-              <span class="meta">   1500 sq ft</span></p>
-            <span class="price">$75000</span>
-            <a class="link-arrow iconic iconic-arrow-forward" href="#"></a>
+            <h3><span class="type">{{ $propery->category}}:</span>
+            {{ $propery->street}},
+            {{ $propery->town}}</h3>
+            <p class="meta-list"><span class="meta">Bed : {{ $propery->bed}}</span>
+              <span class="meta"> Parking : {{ $propery->parking}} </span>
+              <span class="meta">   Bath : {{ $propery->bath}} </span>
+              <span class="meta">   {{ $propery->size}} sq ft</span></p>
+            <span class="price">Ksh.{{ $propery->price}}</span>
+            <a class="link-arrow iconic iconic-arrow-forward" href="{{ url('/property'.$key->id)}}">View</a>
           </div>
         </div>
 

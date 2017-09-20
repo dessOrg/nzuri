@@ -47,7 +47,11 @@
       @foreach($properties as $key)
       <div class="grid-box">
         <div class="image" style="">
+          @if($key->type === Sale)
         <span class="box-type"><span class="text">Sale</span></span>
+        @else
+         <span class="box-type red"><span class="text">Rent</span></span>
+        @endif
           <img src="https://s3.eu-west-1.amazonaws.com/nzuri{{$key->image}}" class="img-responsive" alt="" height="auto" width="360">
         </div>
         <div class="description">

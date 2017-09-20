@@ -48,7 +48,7 @@
       <div class="grid-box">
         <div class="image" style="height:234; width:360;">
         <span class="box-type"><span class="text">Sale</span></span>
-          <img src="https://s3.eu-west-1.amazonaws.com/nzuri{{$key->image}}" alt="" style="height:234; width:360;">
+          <img src="https://s3.eu-west-1.amazonaws.com/nzuri{{$key->image}}" class="img-rounded" alt="" height="auto" width="360">
         </div>
         <div class="description">
           <h3><span class="type">{{$key->category}}:</span>

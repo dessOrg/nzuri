@@ -10195,7 +10195,7 @@ Heading
     text-align: center;
     position: relative;
     overflow: hidden;
-    height: 230;}
+    height: 230px;}
   .grid-box img {
     transition: all 0.8s ease-in-out;
     width: 100%; }
@@ -10203,7 +10203,7 @@ Heading
     -webkit-transform: scale(1.2);
             transform: scale(1.2); }
   .grid-box .description {
-    background: #000;
+    background: #fff;
     padding: 20px;
     width: 100%;
     float: left;

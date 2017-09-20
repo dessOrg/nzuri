@@ -109,4 +109,70 @@ class HomeController extends Controller
 
     }
 
+  public function loadimage($id)
+  {
+
+    $hit = Property::find($id);
+    $post = Callery::where('property_id','=',$id)->get();
+    return view('/image')->with('images', $post)->with('property', $hit);
+  }
+
+
+ protected function addimage(Request $request, $id) {
+  $rules = array(
+'file' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+      );
+
+      $validator = Validator::make(Input::all(), $rules);
+
+ // check if the validator failed -----------------------
+ if ($validator->fails()) {
+
+    // get the error messages from the validator
+    $messages = $validator->messages();
+
+    // redirect our user back to the form with the errors from the validator
+    return Redirect::to('/image'.$id)
+        ->withErrors($validator);
+
+ } else {
+    // validation successful ---------------------------
+
+    // report has passed all tests!
+    // let him enter the database
+
+    // create the data for report
+    $imag= new Callery;
+    $imag->property_id = $id;
+
+    $image = $request->file('file');
+     $imageName = time().'.'.$request->file('file')->getClientOriginalExtension();
+     $s3 = \Storage::disk('s3');
+     $filePath = '/nzuri/' . $imageName;
+     $s3->put($filePath, file_get_contents($image), 'public');
+
+     $imag->image     = $filePath;
+     $imag->save();
+
+    // save report
+
+
+    // redirect ----------------------------------------
+    // redirect our user back to the form so they can do it all over again
+    return Redirect::to('/image'.$id);
+  }
+
+ }
+
+  protected function delimage($id, $p_id) {
+
+    $hit = Callery::find($id);
+    $hit->delete();
+    return Redirect::to('/image'.$p_id);
+  }
+
+
+
+
+
   }

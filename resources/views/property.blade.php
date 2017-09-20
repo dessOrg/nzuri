@@ -40,6 +40,7 @@
              @else
                 @if(Auth::user()->role === "sysadmin")
              <a href="{{url('edit'.$property->id)}}"><span class="btn btn-primary btn-warning ">Edit</span></a>
+             <a href="{{url('edit'.$image->id)}}"><span class="btn btn-primary btn-success ">Add Images</span></a>
                 @endif
              @endif
 

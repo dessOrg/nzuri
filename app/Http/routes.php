@@ -37,7 +37,8 @@ $this->get('/properties', function () {
 $this->get('/property{id}', function($id){
 
     $name = Property::find($id);
-    return view('property')->with('property', $name);
+    $images = Callery::find($id);
+    return view('property')->with('property', $name)->with('images', $images);
 });
 
 $this->auth();

@@ -37,7 +37,7 @@ $this->get('/properties', function () {
 $this->get('/property{id}', function($id){
 
     $name = Property::find($id);
-    $images = Callery::find($id);
+    $images = Callery::where("property_id", "=",$id)->get();
     return view('property')->with('property', $name)->with('images', $images);
 });
 

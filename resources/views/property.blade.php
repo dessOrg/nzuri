@@ -38,7 +38,7 @@
              <span class="btn btn-primary btn-danger disabled">Ksh.{{$property->price}}</span>
              @if(Auth::guest())
              @else
-                @if(Auth::user()->role === "Root")
+                @if(Auth::user()->role === "sysadmin")
              <a href="{{url('edit'.$property->id)}}"><span class="btn btn-primary btn-warning ">Edit</span></a>
                 @endif
              @endif

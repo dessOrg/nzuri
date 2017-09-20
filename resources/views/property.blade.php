@@ -41,7 +41,7 @@
                 @if(Auth::user()->role === "Root")
              <a href="{{url('edit'.$property->id)}}"><span class="btn btn-primary btn-warning ">Edit</span></a>
                 @endif
-             @
+             @endif
 
            </div>
            <div class="pad-top-small meta-list">

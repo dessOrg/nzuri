@@ -8,7 +8,7 @@
      <ol class="breadcrumb">
            <li><a href="#">Home</a></li>
            <li><a href="#">Search page</a></li>
-           <li class="active">{{$property->category}} for {{ $propert->type}}</li>
+           <li class="active">{{$property->category}} for {{ $property->type}}</li>
      </ol>
      <div class="title-row heading">
        <div class="col-md-12">

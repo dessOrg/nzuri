@@ -23,7 +23,7 @@
         <div class="col-md-6 content-table-image">
         <div class="owlCarousel properties-slider">
           @foreach($images as $key)
-         <div class="item"><img src="https://s3.eu-west-1.amazonaws.com/nzuri{{$key->image}}" height="577" width="570" alt=""></div>
+         <div class="item"><img src="https://s3.eu-west-1.amazonaws.com/nzuri{{$key->image}}" height="100%" width="570" alt=""></div>
           @endforeach
         </div>
         </div>
@@ -67,22 +67,13 @@
           <div class="properties-descriptions tabs-vertical" role="tabpanel">
             <ul class="nav nav-tabs">
               <li class="active"><a href="#features" data-toggle="tab">FEATURES</a></li>
-              <li><a href="#openhouse" data-toggle="tab">OPEN HOUSE</a></li>
               <li><a href="#video" data-toggle="tab">VIDEO</a></li>
               <li><a href="#map" data-toggle="tab">MAP</a></li>
-              <li><a href="#community" data-toggle="tab">COMMUNITY</a></li>
             </ul>
             <div class="tab-content">
               <div class="tab-pane fade in active" id="features">
                 <div class="contents">
                  <h2>3006 Land Point Rd TE Seattle, 986TNAP</h2>
-                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition.</p>
-                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin </p>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="openhouse">
-               <div class="contents">
-                 <h2>Heading openhouse</h2>
                   <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition.</p>
                   <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin </p>
                 </div>
@@ -98,13 +89,6 @@
               </div>
               <div class="tab-pane fade" id="map">
                 <iframe class="map-responsive"  src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d9932.806350514124!2d-0.055395809509289455!3d51.509517539376255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sflat+for+sale+!5e0!3m2!1sen!2s!4v1432878796311" width="600" height="450"  style="border:0"></iframe>
-              </div>
-              <div class="tab-pane fade" id="community">
-               <div class="contents">
-                  <h3>Heading community</h3>
-                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition.</p>
-                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin </p>
-                </div>
               </div>
             </div>
           </div>

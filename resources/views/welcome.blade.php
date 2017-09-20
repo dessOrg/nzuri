@@ -29,17 +29,17 @@
           @else
           <span class="box-type red"><span class="text">Rent</span></span>
           @endif
-            <img src="https://s3.eu-west-1.amazonaws.com/nzuri{{ $propery->image}}" alt="" height="234" width="360">
+            <img src="https://s3.eu-west-1.amazonaws.com/nzuri{{ $key->image}}" alt="" height="234" width="360">
           </div>
           <div class="description">
-            <h3><span class="type">{{ $propery->category}}:</span>
-            {{ $propery->street}},
-            {{ $propery->town}}</h3>
-            <p class="meta-list"><span class="meta">Bed : {{ $propery->bed}}</span>
-              <span class="meta"> Parking : {{ $propery->parking}} </span>
-              <span class="meta">   Bath : {{ $propery->bath}} </span>
-              <span class="meta">   {{ $propery->size}} sq ft</span></p>
-            <span class="price">Ksh.{{ $propery->price}}</span>
+            <h3><span class="type">{{ $key->category}}:</span>
+            {{ $key->street}},
+            {{ $key->town}}</h3>
+            <p class="meta-list"><span class="meta">Bed : {{ $key->bed}}</span>
+              <span class="meta"> Parking : {{ $key->parking}} </span>
+              <span class="meta">   Bath : {{ $key->bath}} </span>
+              <span class="meta">   {{ $key->size}} sq ft</span></p>
+            <span class="price">Ksh.{{ $key->price}}</span>
             <a class="link-arrow iconic iconic-arrow-forward" href="{{ url('/property'.$key->id)}}">View</a>
           </div>
         </div>

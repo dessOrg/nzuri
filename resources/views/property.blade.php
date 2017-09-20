@@ -36,6 +36,7 @@
            <div class="pad-top-small">
              <span class="btn btn-primary disabled">{{$property->type}}</span>
              <span class="btn btn-primary btn-danger disabled">Ksh.{{$property->price}}</span>
+             <a href="{{url('edit'.$property->id)}}"><span class="btn btn-primary btn-warning disabled">Edit</span></a>
            </div>
            <div class="pad-top-small meta-list">
            <span class="meta">Bed : {{$property->bed}}</span>

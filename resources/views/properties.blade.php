@@ -47,7 +47,7 @@
       @foreach($properties as $key)
       <div class="grid-box">
         <div class="image" style="">
-          @if($key->type === Sale)
+          @if($key->type === "Sale")
         <span class="box-type"><span class="text">Sale</span></span>
         @else
          <span class="box-type red"><span class="text">Rent</span></span>

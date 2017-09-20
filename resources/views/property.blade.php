@@ -24,7 +24,7 @@
         <div class="owlCarousel properties-slider">
           @foreach($images as $key)
          <div class="item"><img src="https://s3.eu-west-1.amazonaws.com/nzuri{{$key->image}}" height="577" width="570" alt=""></div>
-          @endif
+          @endforeach
         </div>
         </div>
          <div class="col-md-6 pull-right contents grid-gap-large">

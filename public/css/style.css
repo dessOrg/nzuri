@@ -10195,10 +10195,11 @@ Heading
     text-align: center;
     position: relative;
     overflow: hidden;
-    height: 230px;}
+    }
   .grid-box img {
     transition: all 0.8s ease-in-out;
-    width: 100%; }
+    width: 100%;
+    height: 230px;}
   .grid-box img:hover {
     -webkit-transform: scale(1.2);
             transform: scale(1.2); }

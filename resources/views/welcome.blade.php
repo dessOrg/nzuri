@@ -192,56 +192,6 @@
         </div>
       </div>
     </div>
-    <div class="agents">
-      <div class="agent">
-        <div class="data">
-            <img src="images/agents/agent-1.jpg" alt="" height="172" width="157">
-            <div class="meta">
-              <a class="" href="agents-details.html">Jhone Doe <span class="iconic iconic-arrow-right3"></span></a>
-            </div>
-        </div>
-      </div>
-      <div class="agent">
-        <div class="data">
-            <img src="images/agents/agent-2.jpg" alt="" height="172" width="157">
-            <div class="meta">
-              <a class="" href="agents-details.html">Jhone Doe <span class="iconic iconic-arrow-right3"></span></a>
-            </div>
-        </div>
-      </div>
-      <div class="agent">
-        <div class="data">
-            <img src="images/agents/agent-3.jpg" alt="" height="172" width="157">
-            <div class="meta">
-              <a class="" href="agents-details.html">Jhone Doe <span class="iconic iconic-arrow-right3"></span></a>
-            </div>
-        </div>
-      </div>
-      <div class="agent">
-        <div class="data">
-            <img src="images/agents/agent-4.jpg" alt="" height="172" width="157">
-            <div class="meta">
-              <a class="" href="agents-details.html">Jhone Doe <span class="iconic iconic-arrow-right3"></span></a>
-            </div>
-        </div>
-      </div>
-      <div class="agent">
-        <div class="data">
-            <img src="images/agents/agent-5.jpg" alt="" height="172" width="157">
-            <div class="meta">
-              <a class="" href="agents-details.html">Jhone Doe <span class="iconic iconic-arrow-right3"></span></a>
-            </div>
-        </div>
-      </div>
-      <div class="agent">
-        <div class="data">
-            <img src="images/agents/agent-6.jpg" alt="" height="172" width="157">
-            <div class="meta">
-              <a class="" href="agents-details.html">Jhone Doe <span class="iconic iconic-arrow-right3"></span></a>
-            </div>
-        </div>
-      </div>
-    </div>
 
 
     </div>

@@ -104,7 +104,7 @@ class HomeController extends Controller
 
        // redirect ----------------------------------------
        // redirect our user back to the form so they can do it all over again
-       return Redirect::to('/property');
+       return Redirect::to('/property'.$property->id);
      }
 
     }

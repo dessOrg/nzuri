@@ -33,9 +33,14 @@ $this->get('/properties', function () {
     return view('properties')->with('properties', $name);
 });
 
+$this->get('/property{id}', function($id){
+
+    $name = Property::find($id);
+    return view('property')->with('property', $name);
+});
+
 $this->auth();
 
 $this->get('/home', 'HomeController@index');
 $this->get('/add-form', 'HomeController@add');
 $this->post('/add', 'HomeController@createhome');
-$this->get('/property{id}', "HomeController@property");

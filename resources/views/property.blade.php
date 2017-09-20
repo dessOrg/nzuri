@@ -36,7 +36,13 @@
            <div class="pad-top-small">
              <span class="btn btn-primary disabled">{{$property->type}}</span>
              <span class="btn btn-primary btn-danger disabled">Ksh.{{$property->price}}</span>
-             <a href="{{url('edit'.$property->id)}}"><span class="btn btn-primary btn-warning disabled">Edit</span></a>
+             @if(Auth::guest())
+             @else
+                @if(Auth::user()->role === "Root")
+             <a href="{{url('edit'.$property->id)}}"><span class="btn btn-primary btn-warning ">Edit</span></a>
+                @endif
+             @
+
            </div>
            <div class="pad-top-small meta-list">
            <span class="meta">Bed : {{$property->bed}}</span>

@@ -10194,7 +10194,8 @@ Heading
     display: block;
     text-align: center;
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    height: 235;}
   .grid-box img {
     transition: all 0.8s ease-in-out;
     width: 100%; }

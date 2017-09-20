@@ -108,4 +108,12 @@ class HomeController extends Controller
      }
 
     }
+
+  protected function($id)
+  {
+    $name = Property::find($id);
+    return view('property')->with('property', $name);
+  }
+
+
   }

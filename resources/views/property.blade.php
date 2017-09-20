@@ -8,7 +8,7 @@
      <ol class="breadcrumb">
            <li><a href="#">Home</a></li>
            <li><a href="#">Search page</a></li>
-           <li class="active">Selected property</li>
+           <li class="active">{{$property->category}} for {{ $propert->type}}</li>
      </ol>
      <div class="title-row heading">
        <div class="col-md-12">
@@ -22,7 +22,7 @@
         <div class="content-back row-float">
         <div class="col-md-6 content-table-image">
         <div class="owlCarousel properties-slider">
-         <div class="item"><img src="images/properties-details/properties-1.jpg" height="577" width="570" alt=""></div>
+         <div class="item"><img src="{{$property->image}}" height="577" width="570" alt=""></div>
          <div class="item"><img class="lazyOwl" src="images/properties-details/properties-1.jpg" height="577" width="570" alt=""></div>
          <div class="item"><img class="lazyOwl" src="images/properties-details/properties-1.jpg" height="577" width="570" alt=""></div>
          <div class="item"><img class="lazyOwl" src="images/properties-details/properties-1.jpg" height="577" width="570" alt=""></div>
@@ -31,19 +31,19 @@
         </div>
          <div class="col-md-6 pull-right contents grid-gap-large">
            <div class="heading pad-top-large">
-           <h4>3006 Land Point Rd TE Seattle, 986TNAP</h4>
+           <h4>{{$property->street}}, {{$property->town}}</h4>
            </div>
            <div class="pad-top-small">
-             <span class="btn btn-primary disabled">Rent</span>
-             <span class="btn btn-primary btn-danger disabled">$ 50,000</span>
+             <span class="btn btn-primary disabled">{{$property->type}}</span>
+             <span class="btn btn-primary btn-danger disabled">Ksh.{{$property->price}}</span>
            </div>
            <div class="pad-top-small meta-list">
-           <span class="meta">Bed : 3</span>
-           <span class="meta">Parking : 1</span>
-           <span class="meta">Bath : 1</span>
-           <span class="meta">1500 sq ft</span>
+           <span class="meta">Bed : {{$property->bed}}</span>
+           <span class="meta">Parking : {{$property->parking}}</span>
+           <span class="meta">Bath : {{$property->bath}}</span>
+           <span class="meta">{{$property->size}} sq ft</span>
            </div>
-           <p>Featured on the cover of Pacific Northwest Magazine, completed in 2011 this modern home is a true work of art. Sweeping views across the San Juan Islands and beyond are framed by the glass folding walls, integrating the nature outside with the living inside. Designed by Jeb Thornberg & Michael Wangen of Indigo Design, the foundation legs support a Vierendeel frame that allow the wings of the house to cantilever 28 ft in both directions, leaving the landscape pristine & untouched. </p>
+           <p>{{$property->description}} </p>
            <div class="meta pad-top-large pad-bottom-small">
              <span class="meta-list2">
                <span class="meta"><span class="iconic iconic-heart"></span>1129 likes</span>

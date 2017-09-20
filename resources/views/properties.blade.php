@@ -63,7 +63,7 @@
             <span class="meta">   Bath : {{$key->bath}} </span>
             <span class="meta">   {{$key->size}} sq ft</span></p>
           <span class="price">Ksh.{{$key->price}}</span>
-          <a class="link-arrow iconic iconic-arrow-forward" href=""></a>
+          <a class="link-arrow iconic iconic-arrow-forward" href="{{url('property'. $key->id)}}"></a>
         </div>
       </div>
       @endforeach

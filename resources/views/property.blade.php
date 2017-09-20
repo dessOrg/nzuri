@@ -22,7 +22,7 @@
         <div class="content-back row-float">
         <div class="col-md-6 content-table-image">
         <div class="owlCarousel properties-slider">
-         <div class="item"><img src="{{$property->image}}" height="577" width="570" alt=""></div>
+         <div class="item"><img src="https://s3.eu-west-1.amazonaws.com/nzuri{{$property->image}}" height="577" width="570" alt=""></div>
          <div class="item"><img class="lazyOwl" src="images/properties-details/properties-1.jpg" height="577" width="570" alt=""></div>
          <div class="item"><img class="lazyOwl" src="images/properties-details/properties-1.jpg" height="577" width="570" alt=""></div>
          <div class="item"><img class="lazyOwl" src="images/properties-details/properties-1.jpg" height="577" width="570" alt=""></div>

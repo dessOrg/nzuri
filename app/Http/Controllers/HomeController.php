@@ -109,7 +109,7 @@ class HomeController extends Controller
 
     }
 
-  protected function($id)
+  protected function property($id)
   {
     $name = Property::find($id);
     return view('property')->with('property', $name);

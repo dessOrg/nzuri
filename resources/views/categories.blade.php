@@ -23,7 +23,7 @@
    <form class="form-1"  role="form" method="POST" action="{{ url('/category') }}" enctype="multipart/form-data">
      {{ csrf_field() }}
        <div class="row pad-top-large">
-         <div class="col-md-3">
+         <div class="col-md-offset-3 col-md-3">
            <p>Add Category</p>
          <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
              <input class="form-control" type="text" name="title" placeholder="Category Name" required="true">
@@ -49,7 +49,7 @@
 
 
      <div class="row">
-       <div class="col-md-8">
+       <div class=" col-md-offset-3 col-md-8">
          <div class="alert alert-info">
        Existing Categories
        </div>
@@ -61,7 +61,7 @@
      </tr>
      @foreach($categories as $key)
        <tr>
-         <td><button class="btn btn-default">[Remove]</button></td>
+         <td><a href="{{ url('/delCategory'.$key->id)}}"><button class="btn btn-default">[Remove]</button></a></td>
          <td><code>{{ $key->title}}</code></td>
        </tr>
           @endforeach

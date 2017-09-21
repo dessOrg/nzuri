@@ -51,3 +51,4 @@ $this->post('/image{id}', 'HomeController@addimage');
 $this->get('/delimage{id}/{p_id}', 'HomeController@delimage');
 $this->post('/category', 'HomeController@createcategory');
 $this->get('/categories', 'HomeController@categories');
+$this->get('/delCatecory{id}', 'HomeController@delCategoy');

@@ -217,6 +217,13 @@ class HomeController extends Controller
      }
    }
 
+    protected function delCategory($id) {
+
+      $hit = Category::find($id);
+      $hit->delete();
+      return Redirect::to('/categories');
+    }
+
 
 
 

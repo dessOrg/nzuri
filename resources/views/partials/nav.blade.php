@@ -11,6 +11,12 @@
     <li><a href="{{ url('/add-form')}}">Add Home</a></li>
   </ul>
   </li>
+  <li class="menu-item-has-children"><a href="#">Admin</a>
+  <ul class="sub-menu">
+        <li><a href="{{ url('/categories')}}">Categories</a></li>
+        <li><a href="{{ url('/users')}}">Users</a></li>
+      </ul>
+  </li>
   <li class="menu-item-has-children"><a href="#">Blog</a>
     <ul class="sub-menu">
       <li><a href="#">Blog List</a>
@@ -92,10 +98,10 @@
     <li><a href="{{ url('/add-form')}}">Add Home</a></li>
   </ul>
   </li>
-  <li class="menu-item-has-children"><a href="#">Pages</a>
+  <li class="menu-item-has-children"><a href="#">Admin</a>
   <ul class="sub-menu">
-        <li><a href="page-layout-left-sidebar.html">Sidebar Left</a></li>
-        <li><a href="page-layout-right-sidebar.html">Sidebar Right</a></li>
+        <li><a href="{{ url('/categories')}}">Categories</a></li>
+        <li><a href="{{ url('/users')}}">Users</a></li>
       </ul>
   </li>
   <li class="menu-item-has-children"><a href="#">Blog</a>

@@ -171,6 +171,45 @@ class HomeController extends Controller
     return Redirect::to('/image'.$p_id);
   }
 
+     protected function createcategory(Request $request)
+     {
+
+      $rules = array(
+              'title' => 'required|max:100'
+          );
+
+          $validator = Validator::make(Input::all(), $rules);
+
+    // check if the validator failed -----------------------
+    if ($validator->fails()) {
+
+        // get the error messages from the validator
+        $messages = $validator->messages();
+
+        // redirect our user back to the form with the errors from the validator
+        return Redirect::to('/categories')
+            ->withErrors($validator);
+
+    } else {
+        // validation successful ---------------------------
+
+        // report has passed all tests!
+        // let him enter the database
+
+        // create the data for report
+        $category = new Category;
+        $category->title     = Input::get('title');
+
+        // save report
+        $category->save();
+
+        // redirect ----------------------------------------
+        // redirect our user back to the form so they can do it all over again
+        return Redirect::to('/categories');
+
+     }
+   }
+
 
 
 

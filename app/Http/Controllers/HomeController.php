@@ -37,7 +37,7 @@ class HomeController extends Controller
 
     public function users()
     {
-      $name = Users::get();
+      $name = User::get();
       return view('users')->with('users', $name);
     }
 

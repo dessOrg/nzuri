@@ -30,6 +30,8 @@
      <tr>
        <th style="width:150px">Action</th>
        <th>Title</th>
+       <th>Email</th>
+       <th>Mobile No</th>
      </tr>
      @foreach($users as $key)
        <tr>

@@ -6,8 +6,8 @@
   <li class="menu-item-has-children"><a href="{{ url('/') }}">Home</a></li>
   <li class="menu-item-has-children"><a href="{{ url('/properties') }}">Homes</a>
   <ul class="sub-menu">
-    <li><a href="{{ url('/properties')}}">Homes For Sale</a></li>
-    <li><a href="{{ url('/properties')}}">Homes For Rent</a></li>
+    <li><a href="{{ url('/forsale')}}">Homes For Sale</a></li>
+    <li><a href="{{ url('/forrent')}}">Homes For Rent</a></li>
     <li><a href="{{ url('/add-form')}}">Add Home</a></li>
   </ul>
   </li>

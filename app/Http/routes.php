@@ -34,6 +34,16 @@ $this->get('/properties', function () {
     return view('properties')->with('properties', $name);
 });
 
+$this->get('/forsale', function () {
+  $name = Property::where('type','=','Sale')->get();
+    return view('properties')->with('properties', $name);
+});
+
+$this->get('/forrent', function () {
+  $name = Property::where('type','=','Rent')->get();
+    return view('properties')->with('properties', $name);
+});
+
 $this->get('/property{id}', function($id){
 
     $name = Property::find($id);

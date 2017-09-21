@@ -35,6 +35,12 @@ class HomeController extends Controller
         return view('home');
     }
 
+    public function users()
+    {
+      $name = Users::get();
+      return view('users')->with('users', $name);
+    }
+
     public function add()
     {
       $name = Category::get();

@@ -44,6 +44,7 @@ $this->get('/property{id}', function($id){
 $this->auth();
 
 $this->get('/home', 'HomeController@index');
+$this->get('/users', 'HomeController@users');
 $this->get('/add-form', 'HomeController@add');
 $this->post('/add', 'HomeController@createhome');
 $this->get('/image{id}', 'HomeController@loadimage');

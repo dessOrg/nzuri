@@ -37,7 +37,8 @@ class HomeController extends Controller
 
     public function add()
     {
-      return view('add');
+      $name = Category::get();
+      return view('add')->with('categories', $name);
     }
 
     protected function createhome(Request $request) {

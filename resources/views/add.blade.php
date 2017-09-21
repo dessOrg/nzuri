@@ -23,8 +23,9 @@
                <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                  <select class="form-control" id="category" name="category" required="true" value="{{ old('category') }}" style="">
                    <option value="">Property Category</option>
-                   <option value="Appertment">Houses/Appertments</option>
-                   <option value="Cottages">Cottages</option>
+                   @foreach($categories as $cat)
+                   <option value="$cat->title">{{$cat->title}}</option>
+                   @endforeach
                  </select>
                </div>
                </div>

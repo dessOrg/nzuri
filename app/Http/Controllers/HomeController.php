@@ -171,7 +171,13 @@ class HomeController extends Controller
     return Redirect::to('/image'.$p_id);
   }
 
-     protected function createcategory(Request $request)
+  public function categories()
+  {
+    $name = Category::get();
+    return view('categories')->with('categories', $name);
+  }
+
+  protected function createcategory(Request $request)
      {
 
       $rules = array(

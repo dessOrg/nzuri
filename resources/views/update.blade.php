@@ -24,7 +24,7 @@
                  <select class="form-control" id="category" name="category" required="true" value="{{ old('category') }}" style="">
                    <option value="{{ $property->category }}">{{ $property->category }} Category</option>
                    @foreach($categories as $cat)
-                   <option value="$cat->title">{{$cat->title}}</option>
+                   <option value="{{$cat->title}}">{{$cat->title}}</option>
                    @endforeach
                  </select>
                </div>

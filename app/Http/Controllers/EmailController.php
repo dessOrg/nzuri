@@ -21,12 +21,12 @@ class EmailController extends Controller
 
      public function sendFavorite(Request $request, $id)
     {
-        $title = $request->input('code ');
-        $content = $request->input('content');
-        $sender_email = $request->input('email');
-        $sender_phone = $request->input('phone');
+        $title = Input::get('code ');
+        $content = Input::get('content');
+        $sender_email = Input::get('email');
+        $sender_phone = Input::get('phone');
         $property_id =  $id;
-        $name = $request->input('name');
+        $name = Input::get('name');
 
         Mail::send('emails.send', ['title' => $title, 'content' => $content], function ($message)
         {

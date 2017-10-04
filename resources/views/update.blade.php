@@ -86,7 +86,7 @@
              </div>
                <div class="col-md-2">
                <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                   <input id="address" type="text" class="form-control" name="address" value="{{ $property->address }}" placeholder="Address/Street" required="true">
+                   <input id="address" type="text" class="form-control" name="address" value="{{ $property->street }}" placeholder="Address/Street" required="true">
 
                    @if ($errors->has('address'))
                        <span class="help-block">

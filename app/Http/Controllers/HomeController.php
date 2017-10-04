@@ -155,7 +155,7 @@ if ($validator->fails()) {
 
    // create the data for report
 
-   $address     = Input::get('address');
+   $street     = Input::get('address');
    $bed     = Input::get('bed');
    $bath     = Input::get('bath');
    $parking     = Input::get('parking');;
@@ -168,7 +168,7 @@ if ($validator->fails()) {
       $prop_obj = new Property();
       $prop_obj->id = $id;
       $prop = Property::find($prop_obj->id); // Eloquent Model
-      $prop->update(['address' => $address, 'bed' => $bed, 'bath' => $bath, 'parking' => $parking, 'town' => $town, 'location' => $location, 'price' => $price, 'size' => $size, 'description' => $description ]);
+      $prop->update(['street' => $street, 'bed' => $bed, 'bath' => $bath, 'parking' => $parking, 'town' => $town, 'location' => $location, 'price' => $price, 'size' => $size, 'description' => $description ]);
 
    // save report
 

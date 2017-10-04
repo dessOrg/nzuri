@@ -129,7 +129,7 @@
            <div class="heading">
              <h5>Contact jhone doe</h5>
            </div>
-           <form class="form-content pad-top-small"   role="form" method="POST" action="{{ url('/sendFavorite'.$property->id) }}" data-parsley-validate>
+           <form class="form-content form-1"   role="form" method="POST" action="{{ url('/sendFavorite'.$property->id) }}" enctype="multipart/form-data">
              <div class="row">
                <div class="col-md-6 form-group-1">
                  <input type="text" class="form-control input-lg" name="name" placeholder="Name" required data-parsley-required-message="Please insert your name" name="name">

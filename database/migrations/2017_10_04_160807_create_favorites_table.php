@@ -12,7 +12,7 @@ class CreateFavoritesTable extends Migration
      */
     public function up()
     {
-        Schema::create('mails', function (Blueprint $table) {
+        Schema::create('favorites', function (Blueprint $table) {
             $table->increments('id');
             $table->string('sender_name');
             $table->string('sender_email');

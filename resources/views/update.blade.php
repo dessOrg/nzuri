@@ -21,8 +21,7 @@
              <div class="row pad-top-large">
                <div class="col-md-3">
                <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                 <select class="form-control" id="category" name="category" required="true" value="{{ old('category') }}" style="">
-                   <option value="$property->category">{{ $property->category }} Category</option>
+                 <select class="form-control" id="category" name="category" required="true" value="{{ $property->category }}" style="">
                    @foreach($categories as $cat)
                    <option value="$cat->title">{{$cat->title}}</option>
                    @endforeach
@@ -32,7 +31,6 @@
                  <div class="col-md-2">
                  <div class="form-group{{ $errors->has('type') ? ' has-error' : '' }}">
                    <select class="form-control" id="type" name="type" required="true" value="{{ $property->type }}" style="">
-                     <option value="$property->type">{{ $property->type }} Type</option>
                      <option value="Rent">Rent</option>
                      <option value="Sale">For Sale</option>
                    </select>
@@ -46,7 +44,6 @@
                <div class="col-md-2">
                <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                  <select class="form-control" id="bed" name="bed" required="true" value="{{ $property->bed }}">
-                   <option value="$property->bed ">{{ $property->bed }} Bed/s</option>
                    <option value="0">0</option>
                    <option value="1">1</option>
                    <option value="2">2</option>
@@ -59,7 +56,6 @@
                <div class="col-md-2">
                <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                  <select class="form-control" id="bath" name="bath" required="true" value="{{ $property->bath }}">
-                   <option value="$property->bath ">{{ $property->bath }} Bathrooms</option>
                    <option value="0">0</option>
                    <option value="1">1</option>
                    <option value="2">2</option>
@@ -74,7 +70,6 @@
              <div class="col-md-2">
              <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                <select class="form-control" id="parking" name="parking" required="true" value="{{ $property->parking }}">
-                 <option value=" $property->category ">{{ $property->parking }} Parking</option>
                  <option value="0">0</option>
                  <option value="1">1</option>
                  <option value="2">2</option>

@@ -163,12 +163,14 @@ if ($validator->fails()) {
    $location     = Input::get('location');
    $price     = Input::get('price');
    $size     = Input::get('size');
+   $category     = Input::get('category');
+   $type    = Input::get('type');
    $description     = Input::get('description');
 
       $prop_obj = new Property();
       $prop_obj->id = $id;
       $prop = Property::find($prop_obj->id); // Eloquent Model
-      $prop->update(['street' => $street, 'bed' => $bed, 'bath' => $bath, 'parking' => $parking, 'town' => $town, 'location' => $location, 'price' => $price, 'size' => $size, 'description' => $description ]);
+      $prop->update(['street' => $street, 'bed' => $bed, 'bath' => $bath, 'parking' => $parking, 'town' => $town, 'location' => $location, 'price' => $price, 'size' => $size, 'description' => $description, 'type' => $type, 'category' => $category ]);
 
    // save report
 

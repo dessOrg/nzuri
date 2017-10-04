@@ -66,16 +66,28 @@
         <div class="container">
           <div class="properties-descriptions tabs-vertical" role="tabpanel">
             <ul class="nav nav-tabs">
-              <li class="active"><a href="#features" data-toggle="tab">FEATURES</a></li>
+              <li class="active"><a href="#features" data-toggle="tab">Callery</a></li>
               <li><a href="#video" data-toggle="tab">VIDEO</a></li>
               <li><a href="#map" data-toggle="tab">MAP</a></li>
             </ul>
             <div class="tab-content">
               <div class="tab-pane fade in active" id="features">
                 <div class="contents">
-                 <h2>3006 Land Point Rd TE Seattle, 986TNAP</h2>
-                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition.</p>
-                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin </p>
+                 <div class="grid-box-all row">
+
+                     @foreach($images as $key)
+                     <div class="grid-box">
+                       <div class="image ">
+                         <img src="https://s3.eu-west-1.amazonaws.com/nzuri{{ $key->image }}" alt="" height="234" width="360">
+                       </div>
+                       <div class="description">
+
+                         <a class="link-arrow iconic" href="{{ url('delimage'. $key->id.'/'.$key->property_id) }}"><i class="fa fa-remove"></i></a>
+                       </div>
+                     </div>
+                     @endforeach
+
+                 </div>
                 </div>
               </div>
               <div class="tab-pane fade" id="video">

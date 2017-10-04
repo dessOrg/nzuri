@@ -5,13 +5,13 @@
  <section class="content-section">
  <div class="container">
    <ol class="breadcrumb">
-         <li><a href="#">Home</a></li>
+         <li><a href="{{ url('/')}}">Home</a></li>
          <li><a href="#">Page</a></li>
-         <li class="active">Login</li>
+         <li class="active">Property</li>
    </ol>
    <div class="title-row heading">
      <div class="col-md-12">
-       <h3>Login To Nzuri Homes</h3>
+       <h3>Update Property</h3>
      </div>
    </div>
 
@@ -21,7 +21,8 @@
              <div class="row pad-top-large">
                <div class="col-md-3">
                <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                 <select class="form-control" id="category" name="category" required="true" value="{{ $property->category }}" style="">
+                 <select class="form-control" id="category" name="category" required="true" value="{{ old('category') }}" style="">
+                   <option value="{{ $property->category }}">{{ $property->category }} Category</option>
                    @foreach($categories as $cat)
                    <option value="$cat->title">{{$cat->title}}</option>
                    @endforeach
@@ -31,6 +32,7 @@
                  <div class="col-md-2">
                  <div class="form-group{{ $errors->has('type') ? ' has-error' : '' }}">
                    <select class="form-control" id="type" name="type" required="true" value="{{ $property->type }}" style="">
+                     <option value="{{ $property->type }}">{{ $property->type }} Type</option>
                      <option value="Rent">Rent</option>
                      <option value="Sale">For Sale</option>
                    </select>
@@ -44,6 +46,7 @@
                <div class="col-md-2">
                <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                  <select class="form-control" id="bed" name="bed" required="true" value="{{ $property->bed }}">
+                   <option value="{{ $property->bed }} ">{{ $property->bed }} Bed/s</option>
                    <option value="0">0</option>
                    <option value="1">1</option>
                    <option value="2">2</option>
@@ -56,6 +59,7 @@
                <div class="col-md-2">
                <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                  <select class="form-control" id="bath" name="bath" required="true" value="{{ $property->bath }}">
+                   <option value="{{ $property->bath }} ">{{ $property->bath }} Bathrooms</option>
                    <option value="0">0</option>
                    <option value="1">1</option>
                    <option value="2">2</option>
@@ -70,6 +74,7 @@
              <div class="col-md-2">
              <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                <select class="form-control" id="parking" name="parking" required="true" value="{{ $property->parking }}">
+                 <option value="{{ $property->parking }} ">{{ $property->parking }} Parking</option>
                  <option value="0">0</option>
                  <option value="1">1</option>
                  <option value="2">2</option>

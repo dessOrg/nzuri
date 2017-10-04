@@ -17,7 +17,7 @@ use Searchy;
 
 class EmailController extends Controller
 {
-    
+
 
      public function sendFavorite(Request $request, $id)
     {
@@ -28,17 +28,17 @@ class EmailController extends Controller
         $property_id =  $id;
         $name = Input::get('name');
 
-        Mail::send('emails.send', ['title' => $title, 'content' => $content], function ($message)
+        Mail::send('emails.send', ['title' => $title, 'content' => $content], function ($message) use ($sender_email, $name)
         {
 
-            $message->from("desshub95@gmail.com");
+            $message->from($sender_email, $name);
 
             $message->to('info@atlantichomez.com');
 
         });
 
         $favorite = new Favorite;
-        $favorite->sender_name = $sender_name; 
+        $favorite->sender_name = $sender_name;
         $favorite->sender_email = $sender_email;
         $favorite->sender_phone = $sender_phone;
         $favorite->property_id = $property_id;

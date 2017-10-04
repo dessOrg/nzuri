@@ -31,7 +31,7 @@ class EmailController extends Controller
         Mail::send('emails.send', ['title' => $title, 'content' => $content], function ($message)
         {
 
-            $message->from($sender_email, $name);
+            $message->from('$sender_email', '$name');
 
             $message->to('info@atlantichomez.com');
 

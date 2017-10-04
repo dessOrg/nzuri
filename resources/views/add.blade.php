@@ -164,7 +164,7 @@
 </div>
 <div class="map_canvas"></div>
 </section>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyDfpOZLjtIwPZUhFCJ-xJthsCSX7_kuhyU"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfpOZLjtIwPZUhFCJ-xJthsCSX7_kuhyU&libraries=places"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="/js/jquery.geocomplete.js"></script>
 <script>

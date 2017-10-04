@@ -165,18 +165,13 @@
 <div class="map_canvas"></div>
 </section>
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFc-SLi5TML9chvmEouiUtqVlBM3klZGg&libraries=places"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src="/js/jquery.geocomplete.js"></script>
-<script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
+    <script src="http://ubilabs.github.io/geocomplete/jquery.geocomplete.js"></script>
+    <script>
       $(function(){
-
-        var options = {
-          map: ".map_canvas",
-          location: "NYC"
-        };
         $("#geocomplete").geocomplete();
       });
-</script>
+    </script>
 @include('partials.footer')
 @endsection

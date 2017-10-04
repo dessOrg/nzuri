@@ -80,10 +80,6 @@
                        <div class="image ">
                          <img src="https://s3.eu-west-1.amazonaws.com/nzuri{{ $key->image }}" alt="" height="234" width="360">
                        </div>
-                       <div class="description">
-
-                         <a class="link-arrow iconic" href="{{ url('delimage'. $key->id.'/'.$key->property_id) }}"><i class="fa fa-remove"></i></a>
-                       </div>
                      </div>
                      @endforeach
 

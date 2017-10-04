@@ -40,7 +40,7 @@
                  </div>
                <div class="col-md-3">
                <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                    <input type="text" id="txtPlaces" name="location" required="true" value="{{ old('location') }}" placeholder="Enter a location" />
+                    <input type="text" id="geocomplete" name="location" required="true" value="{{ old('location') }}" placeholder="Enter a location" />
                </div>
                </div>
                <div class="col-md-2">
@@ -162,14 +162,20 @@
       </div>
 
 </div>
+<div class="map_canvas"></div>
 </section>
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyDfpOZLjtIwPZUhFCJ-xJthsCSX7_kuhyU"></script>
-<script type="text/javascript">
-    google.maps.event.addDomListener(window, 'load', function () {
-        var places = new google.maps.places.Autocomplete(document.getElementById('txtPlaces'));
-        google.maps.event.addListener(places, 'place_changed', function () {
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>
+    $(function(){
 
-        });
+      var options = {
+        map: ".map_canvas",
+        location: ""
+      };
+
+      $("#geocomplete").geocomplete(options);
+
     });
 </script>
 @include('partials.footer')

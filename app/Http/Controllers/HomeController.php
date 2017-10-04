@@ -76,7 +76,10 @@ class HomeController extends Controller
 
        // report has passed all tests!
        // let him enter the database
-
+       $cod_s = str_random(3);
+       $cod_m = str_random(3);
+       $cod_e = str_random(4);
+       $code = $cod_s.$cod_m.$cod_e;
        // create the data for report
        $property= new Property;
        $property->category     = Input::get('category');
@@ -92,6 +95,7 @@ class HomeController extends Controller
        $property->status     = 'pending';
        $property->description     = Input::get('description');
        $property->user_id     = Auth::user()->id;
+       $property->code     = $code;
 
               $image = $request->file('image');
                $imageName = time().'.'.$request->file('image')->getClientOriginalExtension();

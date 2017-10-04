@@ -2,9 +2,9 @@
 
 namespace App;
 
-use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Database\Eloquent\Model;
 
-class Property extends Authenticatable
+class Favorite extends Model
 {
     /**
      * The attributes that are mass assignable.
@@ -12,7 +12,7 @@ class Property extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'category', 'type', 'user_id', 'image', 'bed', 'parking', 'bath','size', 'description', 'status', 'price', 'street', 'town', 'location', 'code'
+        'sender_name', 'sender_email', 'phone', 'code', 'property_id', 'content',
     ];
 
     /**

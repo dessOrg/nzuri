@@ -28,6 +28,7 @@ class CreatePropertiesTable extends Migration
             $table->string('user_id');
             $table->string('description');
             $table->string('type');
+            $table->string('code');
             $table->rememberToken();
             $table->timestamps();
         });

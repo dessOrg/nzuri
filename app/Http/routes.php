@@ -51,6 +51,8 @@ $this->get('/property{id}', function($id){
     return view('property')->with('property', $name)->with('images', $images);
 });
 
+$this->post('/sendFavorite{id}', 'EmailController@sendFavorite');
+
 $this->auth();
 
 $this->get('/home', 'HomeController@index');

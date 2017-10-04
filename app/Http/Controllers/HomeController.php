@@ -117,6 +117,69 @@ class HomeController extends Controller
 
     }
 
+  public function loadhome($id)
+  {
+
+    $post = Property::find($id);
+    $name = Category::get();
+    return view('/update')->with('property', $post)->with('categories', $name);
+  }
+
+protected function updatehome(Request $request, $id) {
+ $rules = array(
+
+         'price' => 'required|max:200',
+         'description' => 'required|max:300',
+         'address' => 'required|max:100',
+         'town' => 'required|max:200',
+         'size' => 'required|max:100',
+     );
+
+     $validator = Validator::make(Input::all(), $rules);
+
+// check if the validator failed -----------------------
+if ($validator->fails()) {
+
+   // get the error messages from the validator
+   $messages = $validator->messages();
+
+   // redirect our user back to the form with the errors from the validator
+   return Redirect::to('/update'.$id)
+       ->withErrors($validator);
+
+} else {
+   // validation successful ---------------------------
+
+   // report has passed all tests!
+   // let him enter the database
+
+   // create the data for report
+
+   $address     = Input::get('address');
+   $bed     = Input::get('bed');
+   $bath     = Input::get('bath');
+   $parking     = Input::get('parking');;
+   $town     = Input::get('town');
+   $location     = Input::get('location');
+   $price     = Input::get('price');
+   $size     = Input::get('size');
+   $description     = Input::get('description');
+
+      $prop_obj = new Property();
+      $prop_obj->id = $id;
+      $prop = Property::find($prop_obj->id); // Eloquent Model
+      $prop->update(['address' => $address, 'bed' => $bed, 'bath' => $bath, 'parking' => $parking, 'town' => $town, 'location' => $location, 'price' => $price, 'size' => $size, 'description' => $description ]);
+
+   // save report
+
+
+   // redirect ----------------------------------------
+   // redirect our user back to the form so they can do it all over again
+   return Redirect::to('/prop'.$id);
+ }
+
+}
+
   public function loadimage($id)
   {
 

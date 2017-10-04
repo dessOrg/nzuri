@@ -2,15 +2,24 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
+use App\User;
+use App\Property;
+use App\Callery;
+use Validator;
+use Auth;
 use App\Http\Requests;
+use Request;
+use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Redirect;
+use Mail;
+use Storage;
+use Searchy;
 
 class EmailController extends Controller
 {
     
 
-     public function sendFavorite(Request $request $id)
+     public function sendFavorite(Request $request, $id)
     {
         $title = $request->input('code ');
         $content = $request->input('content');

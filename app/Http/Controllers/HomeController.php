@@ -175,7 +175,7 @@ if ($validator->fails()) {
 
    // redirect ----------------------------------------
    // redirect our user back to the form so they can do it all over again
-   return Redirect::to('/prop'.$id);
+   return Redirect::to('/property'.$id);
  }
 
 }

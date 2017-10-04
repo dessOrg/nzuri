@@ -170,6 +170,11 @@
 <script>
 
       $(function(){
+
+        var options = {
+          map: ".map_canvas",
+          location: "NYC"
+        };
         $("#geocomplete").geocomplete();
       });
 </script>

@@ -28,10 +28,10 @@ class EmailController extends Controller
         $property_id =  $id;
         $name = Input::get('name');
 
-        Mail::send('emails.send', ['title' => $title, 'content' => $content], function ($message)
+        Mail::send('emails.send', ['title' => $title, 'content' => $content], function ($message, $sender_email)
         {
 
-            $message->from('$sender_email', '$name');
+            $message->from($sender_email, $name);
 
             $message->to('info@atlantichomez.com');
 

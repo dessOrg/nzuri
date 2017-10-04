@@ -40,13 +40,7 @@
                  </div>
                <div class="col-md-3">
                <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                <select class="form-control" id="location" name="location" required="true" value="{{ old('location') }}" style="">
-                  <option  value="">Select city</option>
-                  <option  value="Mombasa">Mombasa</option>
-                  <option  value="Nairobi">Nairobi</option>
-                  <option  value="Kisumu">Kisumu</option>
-
-                </select>
+                    <input type="text" id="txtPlaces" name="location" required="true" value="{{ old('location') }}" placeholder="Enter a location" />
                </div>
                </div>
                <div class="col-md-2">
@@ -169,5 +163,14 @@
 
 </div>
 </section>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script>
+<script type="text/javascript">
+    google.maps.event.addDomListener(window, 'load', function () {
+        var places = new google.maps.places.Autocomplete(document.getElementById('txtPlaces'));
+        google.maps.event.addListener(places, 'place_changed', function () {
+
+        });
+    });
+</script>
 @include('partials.footer')
 @endsection

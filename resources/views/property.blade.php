@@ -129,7 +129,8 @@
            <div class="heading">
              <h5>Contact jhone doe</h5>
            </div>
-           <form class="form-content form-1"   role="form" method="POST" action="{{ url('/sendFavorite'.$property->id) }}" enctype="multipart/form-data">
+           <form class="form-1"  role="form" method="POST" action="{{ url('/sendFavorite'.$property->id) }}" enctype="multipart/form-data">
+           {{ csrf_field() }}
              <div class="row">
                <div class="col-md-6 form-group-1">
                  <input type="text" class="form-control input-lg" name="name" placeholder="Name" required data-parsley-required-message="Please insert your name" name="name">
@@ -160,9 +161,6 @@
                <div class="col-md-12">
                  <button class="btn btn-primary btn-large pull-right">Submit</button>
                </div>
-               <div class="text-success col-xs-12 hidden form-messges text-center">
-               <p>We will responce as soon as possible.</p>
-             </div>
              </div>
 
            </form>

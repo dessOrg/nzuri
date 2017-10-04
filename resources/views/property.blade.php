@@ -125,7 +125,7 @@
          </div>
        </div>
        <div class="col-md-8">
-         <div class="content-box-2 agents-contact">
+         <div class="content-box-2 ">
            <div class="heading">
              <h5>Contact jhone doe</h5>
            </div>

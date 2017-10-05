@@ -6,6 +6,7 @@ use App\User;
 use App\Property;
 use App\Callery;
 use App\Category;
+use App\Banner;
 use Validator;
 use Auth;
 use Illuminate\Support\Facades\Input;
@@ -299,6 +300,56 @@ if ($validator->fails()) {
       $hit->delete();
       return Redirect::to('/categories');
     }
+
+    public function loadbanner()
+    {
+      $name = Banner::get();
+      return view('banners.create')->with('banners', $name);
+    }
+
+    protected function createbanner(Request $request)
+       {
+
+        $rules = array(
+                'title' => 'required|max:100',
+                'content' => 'required|min:10',
+                'name' => 'required|max:100|unique:banners'
+            );
+
+            $validator = Validator::make(Input::all(), $rules);
+
+      // check if the validator failed -----------------------
+      if ($validator->fails()) {
+
+          // get the error messages from the validator
+          $messages = $validator->messages();
+
+          // redirect our user back to the form with the errors from the validator
+          return Redirect::to('/loadbanner')
+              ->withErrors($validator);
+
+      } else {
+          // validation successful ---------------------------
+
+          // report has passed all tests!
+          // let him enter the database
+
+          // create the data for report
+          $banner = new Banner;
+          $banner->title     = Input::get('title');
+          $banner->name     = Input::get('name');
+          $banner->content     = Input::get('content');
+
+          // save report
+          $banner->save();
+
+          // redirect ----------------------------------------
+          // redirect our user back to the form so they can do it all over again
+          return Redirect::to('/loadbanner');
+
+       }
+     }
+
 
 
 

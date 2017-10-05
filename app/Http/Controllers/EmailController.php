@@ -28,14 +28,14 @@ class EmailController extends Controller
         $property_id =  $id;
         $name = Input::get('name');
 
-        Mail::send('emails.send', ['title' => $title, 'content' => $content], function ($message) use ($sender_email, $name)
-        {
-
-            $message->from($sender_email, $name);
-
-            $message->to('info@atlantichomez.com');
-
-        });
+        // Mail::send('emails.send', ['title' => $title, 'content' => $content], function ($message) use ($sender_email, $name)
+        // {
+        //
+        //     $message->from($sender_email, $name);
+        //
+        //     $message->to('info@atlantichomez.com');
+        //
+        // });
 
         $favorite = new Favorite;
         $favorite->sender_name = $sender_name;

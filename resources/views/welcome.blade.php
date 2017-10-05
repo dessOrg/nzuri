@@ -9,8 +9,8 @@
   <div class="container">
     <div class="title-row heading">
       <div class="col-md-12">
-        <h2>WELCOME TO NZURI  <br>
-        HOMES</h2>
+        <h2>WELCOME TO ATLANTIC  <br>
+        HOMEZ</h2>
         <p>For Your Dream Home</p>
         <span class="iconic iconic-search"></span>
       </div>
@@ -49,7 +49,7 @@
       <!-- Grid view // -->
 
       <div class="pad-top-small col-xs-12">
-        <a href="#" class="btn btn-danger btn-large pull-right hvr-shutter-out-vertical">View more results</a>
+        <a href="{{ url('/properties')}}" class="btn btn-danger btn-large pull-right hvr-shutter-out-vertical">View more results</a>
       </div>
     </div>
   </div>
@@ -70,19 +70,20 @@
       <img  src="images/icons/icon-home.png" height="227" width="207" alt="">
     </div>
     <div class="col-md-6 col-md-push-1">
+      @foreach($banners as $key)
       <div class="heading pad-top-large">
-        <h4>NZURI Homes</h4>
+        <h4>{{$key->title}}</h4>
       </div>
       <div class="contents">
-      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
-      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
+      {{ $key->content}}
       <div class="social-links pad-top-large">
-        <a href="#" class="iconic iconic-twitter wow fadeInDown" data-wow-duration="1700ms"></a>
-        <a href="#" class="iconic iconic-dribbble wow fadeInDown" data-wow-duration="1800ms"></a>
-        <a href="#" class="iconic iconic-facebook wow fadeInDown" data-wow-duration="1900ms"></a>
-        <a href="#" class="iconic iconic-google-plus wow fadeInDown" data-wow-duration="2100ms"></a>
+        <a href="#" class="iconic wow fadeInDown" data-wow-duration="1700ms"><i class="fa fa-twitter"></i> </a>
+        <a href="#" class="iconic wow fadeInDown" data-wow-duration="1800ms"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="iconic wow fadeInDown" data-wow-duration="1900ms"><i class="fa fa-linkedin"></i></a>
+        <a href="#" class="iconic wow fadeInDown" data-wow-duration="2100ms"><i class="fa fa-google"></i></a>
       </div>
       </div>
+      @endforeach
     </div>
     </div>
   </div>

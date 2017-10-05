@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 use App\User;
 use App\Property;
 use App\Callery;
+use App\Banner;
+use App\Category;
+use App\Mail;
 use Validator;
 use Auth;
 use App\Http\Requests;
@@ -26,6 +29,7 @@ use Searchy;
 
 $this->get('/', function () {
     $name = Property::get();
+    $banner = Banner::where('name','=','about')->get();
     return view('welcome')->with('properties', $name);
 });
 
@@ -67,3 +71,5 @@ $this->get('/delimage{id}/{p_id}', 'HomeController@delimage');
 $this->post('/category', 'HomeController@createcategory');
 $this->get('/categories', 'HomeController@categories');
 $this->get('/delCategory{id}', 'HomeController@delCategory');
+$this->get('/loadbanner', 'HomeController@loadbanner');
+$this->post('/createbanner', 'HomeController@createbanner');

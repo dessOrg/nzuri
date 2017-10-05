@@ -28,7 +28,7 @@ use Searchy;
 */
 
 $this->get('/', function () {
-    $name = Property::get();
+    $name = Property::orderBy('created_at', 'desc')->limit(3)->get();
     $banner = Banner::where('name','=','about')->get();
     return view('welcome')->with('properties', $name)->with('banners', $banner);
 });

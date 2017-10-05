@@ -312,7 +312,7 @@ if ($validator->fails()) {
 
         $rules = array(
                 'title' => 'required|max:100',
-                'content' => 'required|min:10',
+                'content' => 'required|min:10|max:2000',
                 'name' => 'required|max:100|unique:banners'
             );
 

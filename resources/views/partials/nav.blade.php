@@ -15,7 +15,7 @@
   <ul class="sub-menu">
         <li><a href="{{ url('/categories')}}">Categories</a></li>
         <li><a href="{{ url('/users')}}">Users</a></li>
-        <li><a href="{{ url('/loadbanner')}}">Users</a></li>
+        <li><a href="{{ url('/loadbanner')}}">Banners</a></li>
       </ul>
   </li>
   <li><a href="agents.html">Agents</a>
@@ -87,7 +87,7 @@
   <ul class="sub-menu">
         <li><a href="{{ url('/categories')}}">Categories</a></li>
         <li><a href="{{ url('/users')}}">Users</a></li>
-        <li><a href="{{ url('/loadbanner')}}">Users</a></li>
+        <li><a href="{{ url('/loadbanner')}}">Banners</a></li>
       </ul>
   </li>
   <li><a href="agents.html">Agents</a>

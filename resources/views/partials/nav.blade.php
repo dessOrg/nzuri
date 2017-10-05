@@ -15,23 +15,8 @@
   <ul class="sub-menu">
         <li><a href="{{ url('/categories')}}">Categories</a></li>
         <li><a href="{{ url('/users')}}">Users</a></li>
+        <li><a href="{{ url('/loadbanner')}}">Users</a></li>
       </ul>
-  </li>
-  <li class="menu-item-has-children"><a href="#">Blog</a>
-    <ul class="sub-menu">
-      <li><a href="#">Blog List</a>
-      <ul class="dir-right">
-        <li><a href="blog.html">Masonory Layout</a></li>
-        <li><a href="blog-list-row.html">Single Row Layout</a></li>
-      </ul>
-      </li>
-      <li><a href="#">Blog Single Page</a>
-       <ul class="dir-right">
-        <li><a href="blog-details.html">With image</a></li>
-        <li><a href="blog-details-video.html">With Video</a></li>
-      </ul>
-      </li>
-    </ul>
   </li>
   <li><a href="agents.html">Agents</a>
   <ul>
@@ -102,23 +87,8 @@
   <ul class="sub-menu">
         <li><a href="{{ url('/categories')}}">Categories</a></li>
         <li><a href="{{ url('/users')}}">Users</a></li>
+        <li><a href="{{ url('/loadbanner')}}">Users</a></li>
       </ul>
-  </li>
-  <li class="menu-item-has-children"><a href="#">Blog</a>
-    <ul class="sub-menu">
-      <li><a href="#">Blog List</a>
-      <ul class="dir-right">
-        <li><a href="blog.html">Masonory Layout</a></li>
-        <li><a href="blog-list-row.html">Single Row Layout</a></li>
-      </ul>
-      </li>
-      <li><a href="#">Blog Single Page</a>
-       <ul class="dir-right">
-        <li><a href="blog-details.html">With image</a></li>
-        <li><a href="blog-details-video.html">With Video</a></li>
-      </ul>
-      </li>
-    </ul>
   </li>
   <li><a href="agents.html">Agents</a>
   <ul>

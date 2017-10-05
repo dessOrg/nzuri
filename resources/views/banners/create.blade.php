@@ -83,6 +83,7 @@
           </tr>
           @foreach($banners as $key)
             <tr>
+              <td><a href="{{ url('/delbanner'.$key->id)}}"><button class="btn btn-default">[Remove]</button></a></td>
               <td><a href="#"><button class="btn btn-default">[manage]</button></a></td>
               <td><code>{{ $key->name}}</code></td>
               <td><code>{{ $key->title}}</code></td>

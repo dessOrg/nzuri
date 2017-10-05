@@ -73,3 +73,4 @@ $this->get('/categories', 'HomeController@categories');
 $this->get('/delCategory{id}', 'HomeController@delCategory');
 $this->get('/loadbanner', 'HomeController@loadbanner');
 $this->post('/createbanner', 'HomeController@createbanner');
+$this->get('/delbanner{id}', 'HomeController@delbanner');

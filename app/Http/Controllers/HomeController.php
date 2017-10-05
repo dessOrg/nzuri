@@ -350,6 +350,13 @@ if ($validator->fails()) {
        }
      }
 
+      protected function delbanner($id) {
+
+        $hit = Banner::find($id);
+        $hit->delete();
+        return Redirect::to('/loadbanner');
+      }
+
 
 
 

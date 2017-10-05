@@ -43,11 +43,11 @@
          @if(Auth::guest())
          @else
            @if(Auth::user()->role == 'sysadmin')
-           @if($key->role == 'normal')
-         <td><a href="{{ url('/makeadmin'.$key->id)}}"><button class="btn btn-default">[Make Admin]</button></a></td>
-          @if($key->role == 'admin')
-          <td><a href="{{ url('/makeadmin'.$key->id)}}"><button class="btn btn-default">[Make Normal]</button></a></td>
-           @endif
+             @if($key->role == 'normal')
+              <td><a href="{{ url('/makeadmin'.$key->id)}}"><button class="btn btn-default">[Make Admin]</button></a></td>
+             @elseif($key->role == 'admin')
+              <td><a href="{{ url('/makeadmin'.$key->id)}}"><button class="btn btn-default">[Make Normal]</button></a></td>
+             @endif
            @endif
          @endif
        </tr>

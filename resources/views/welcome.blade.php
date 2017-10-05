@@ -92,39 +92,7 @@
 <!-- Content Section  -->
 <section class="content-section content-table">
   <div class="container">
-     <div class="title-row heading">
-     <div class="col-sm-12">
-      <h2>know your <br>
-      dream home!
-      </h2>
-      <p>blog about latest real estate news</p>
-      <span class="iconic iconic-home"></span>
-      </div>
-    </div>
-    <div class="row pad-top-large">
-     <div class="col-sm-12">
-       <div class="content-back row-float">
-       <div class="col-md-5 content-table-image">
-         <img src="images/interrior/room-1.jpg" height="541" width="473" alt="">
-       </div>
-        <div class="col-md-7 pull-right contents grid-gap-large">
-          <div class="heading pad-top-large">
-          <h5><a href="#">INSTAGRAM PHOTOS IN MY BEDROOM
-          + $100 GIVEAWAY</a></h5>
-          </div>
-          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
-          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure </p>
-          <div class="meta pad-top-large pad-bottom-small">
-            <span class="meta-list2">
-              <span class="meta"><span class="iconic iconic-heart"></span>1129 likes</span>
-               <span class="meta"><span class="iconic iconic-mode-comment"></span>78 comments</span>
-            </span>
-          </div>
-        </div>
-    <a class="link-arrow iconic iconic-arrow-forward" href="#"></a>
-       </div>
-     </div>
-    </div>
+
   </div>
 </section>
 <!-- Content Section //  -->
@@ -135,65 +103,9 @@
 <section class="content-section">
   <div class="container">
     <div class="title-row heading">
-      <div class="col-md-12">
-        <h2>Our <br>
-        agents!</h2>
-        <p>who guide you to find the best homes</p>
-        <span class="iconic iconic-v-card pink"></span>
-      </div>
     </div>
     <div class="row pad-top-large">
     <div class="agents">
-      <div class="agent">
-        <div class="data">
-            <img src="images/agents/agent-1.jpg" alt="" height="172" width="157">
-            <div class="meta">
-              <a class="" href="agents-details.html">Jhone Doe <span class="iconic iconic-arrow-right3"></span></a>
-            </div>
-        </div>
-      </div>
-      <div class="agent">
-        <div class="data">
-            <img src="images/agents/agent-2.jpg" alt="" height="172" width="157">
-            <div class="meta">
-              <a class="" href="agents-details.html">Jhone Doe <span class="iconic iconic-arrow-right3"></span></a>
-            </div>
-        </div>
-      </div>
-      <div class="agent">
-        <div class="data">
-            <img src="images/agents/agent-3.jpg" alt="" height="172" width="157">
-            <div class="meta">
-              <a class="" href="agents-details.html">Jhone Doe <span class="iconic iconic-arrow-right3"></span></a>
-            </div>
-        </div>
-      </div>
-      <div class="agent">
-        <div class="data">
-            <img src="images/agents/agent-4.jpg" alt="" height="172" width="157">
-            <div class="meta">
-              <a class="" href="agents-details.html">Jhone Doe <span class="iconic iconic-arrow-right3"></span></a>
-            </div>
-        </div>
-      </div>
-      <div class="agent">
-        <div class="data">
-            <img src="images/agents/agent-5.jpg" alt="" height="172" width="157">
-            <div class="meta">
-              <a class="" href="agents-details.html">Jhone Doe <span class="iconic iconic-arrow-right3"></span></a>
-            </div>
-        </div>
-      </div>
-      <div class="agent">
-        <div class="data">
-            <img src="images/agents/agent-6.jpg" alt="" height="172" width="157">
-            <div class="meta">
-              <a class="" href="agents-details.html">Jhone Doe <span class="iconic iconic-arrow-right3"></span></a>
-            </div>
-        </div>
-      </div>
-    </div>
-
 
     </div>
   </div>

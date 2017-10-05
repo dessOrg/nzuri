@@ -35,24 +35,27 @@ $this->get('/', function () {
 
 $this->get('/properties', function () {
   $name = Property::get();
-    return view('properties')->with('properties', $name);
+  $cat = Category::get();
+    return view('properties')->with('properties', $name)->with('categories', $cat);
 });
 
 $this->get('/forsale', function () {
   $name = Property::where('type','=','Sale')->get();
-    return view('properties')->with('properties', $name);
+  $cat = Category::get();
+    return view('properties')->with('properties', $name)->with('categories', $cat);
 });
 
 $this->get('/forrent', function () {
   $name = Property::where('type','=','Rent')->get();
-    return view('properties')->with('properties', $name);
+  $cat = Category::get();
+    return view('properties')->with('properties', $name)->with('categories', $cat);
 });
 
 $this->post('/search', function () {
   $type = Input::get('type');
   $cat = Input::get('category');
   $name = Property::where('type','=',$type)->where('category','=',$cat)->get();
-    return view('properties')->with('properties', $name);
+    return view('properties')->with('properties', $name)->with('categories', $cat);
 });
 
 $this->get('/property{id}', function($id){

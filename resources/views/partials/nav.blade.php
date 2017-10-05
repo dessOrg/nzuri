@@ -8,22 +8,34 @@
   <ul class="sub-menu">
     <li><a href="{{ url('/forsale')}}">Homes For Sale</a></li>
     <li><a href="{{ url('/forrent')}}">Homes For Rent</a></li>
-    <li><a href="{{ url('/add-form')}}">Add Home</a></li>
   </ul>
   </li>
+  @if(Auth::guest())
+  @else
+  @if(Auth::user()->role == 'sysadmin')
   <li class="menu-item-has-children"><a href="#">Admin</a>
   <ul class="sub-menu">
         <li><a href="{{ url('/categories')}}">Categories</a></li>
         <li><a href="{{ url('/users')}}">Users</a></li>
         <li><a href="{{ url('/loadbanner')}}">Banners</a></li>
+        <li><a href="{{ url('/add-form')}}">Add Home</a></li>
+        <li><a href="{{ url('/add-form')}}">Add Home</a></li>
       </ul>
   </li>
-  <li><a href="agents.html">Agents</a>
-  <ul>
-    <li><a href="agents-details.html">Agent Details</a></li>
-  </ul>
+  @if(Auth::user()->role == 'Admin')
+  <li class="menu-item-has-children"><a href="#">Admin</a>
+  <ul class="sub-menu">
+        <li><a href="{{ url('/categories')}}">Categories</a></li>
+        <li><a href="{{ url('/users')}}">Users</a></li>
+        <li><a href="{{ url('/loadbanner')}}">Banners</a></li>
+        <li><a href="{{ url('/add-form')}}">Add Home</a></li>
+      </ul>
   </li>
-  @if(Auth::guest())
+   @endif
+   @endif
+
+
+@if(Auth::guest())
   <li class="menu-item-has-children"><a href="#">Account</a>
   <ul class="dir-right level-1 sub-menu">
   <li><a href="{{ url('/login')}}">Login</a></li>
@@ -80,21 +92,31 @@
   <ul class="sub-menu">
     <li><a href="{{ url('/forsale')}}">Homes For Sale</a></li>
     <li><a href="{{ url('/forrent')}}">Homes For Rent</a></li>
-    <li><a href="{{ url('/add-form')}}">Add Home</a></li>
   </ul>
   </li>
+  @if(Auth::guest())
+  @else
+  @if(Auth::user()->role == 'sysadmin')
   <li class="menu-item-has-children"><a href="#">Admin</a>
   <ul class="sub-menu">
         <li><a href="{{ url('/categories')}}">Categories</a></li>
         <li><a href="{{ url('/users')}}">Users</a></li>
         <li><a href="{{ url('/loadbanner')}}">Banners</a></li>
+        <li><a href="{{ url('/add-form')}}">Add Home</a></li>
       </ul>
   </li>
-  <li><a href="agents.html">Agents</a>
-  <ul>
-    <li><a href="agents-details.html">Agent Details</a></li>
-  </ul>
+  @if(Auth::user()->role == 'Admin')
+  <li class="menu-item-has-children"><a href="#">Admin</a>
+  <ul class="sub-menu">
+        <li><a href="{{ url('/categories')}}">Categories</a></li>
+        <li><a href="{{ url('/users')}}">Users</a></li>
+        <li><a href="{{ url('/loadbanner')}}">Banners</a></li>
+        <li><a href="{{ url('/add-form')}}">Add Home</a></li>
+      </ul>
   </li>
+   @endif
+   @endif
+   
   @if(Auth::guest())
   <li class="menu-item-has-children"><a href="#">Account</a>
   <ul class="dir-right level-1 sub-menu">

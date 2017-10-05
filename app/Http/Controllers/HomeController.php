@@ -47,7 +47,13 @@ class HomeController extends Controller
        $user_obj = new User();
        $user_obj->id = $id;
        $user = User::find($user_obj->id); // Eloquent Model
-       $user->update(['role' => "Admin" ]);
+       if($user->role == 'Admin'){
+         $user->update(['role' => "normal" ]);
+       }
+       elseif($user->role == 'normal'){
+
+         $user->update(['role' => "Admin" ]);
+       }      
 
        return Redirect::to('/users');
      }

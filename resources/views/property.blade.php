@@ -112,22 +112,10 @@
        </div>
      </div>
      <div class="row pad-top-small layout-flex">
-       <div class="col-md-4">
-         <div class="content-box-2">
-           <figure class="image-box">
-             <img src="images/properties-details/agents-1.jpg" height="278" width="330" alt="">
-           </figure>
-           <div class="contents">
-             <h3 class="heading-style-1">Jhon Doe</h3>
-             <p>here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly. </p>
-             <p class="text-right"><a href="#" class="btn btn-large btn-primary">Know more</a></p>
-           </div>
-         </div>
-       </div>
-       <div class="col-md-8">
+       <div class="col-md-2 col-md-8">
          <div class="content-box-2 ">
            <div class="heading">
-             <h5>Contact jhone doe</h5>
+             <h5>Contact Agent</h5>
            </div>
            <form class="form-1"  role="form" method="POST" action="{{ url('/sendFavorite'.$property->id) }}" enctype="multipart/form-data">
            {{ csrf_field() }}
@@ -166,7 +154,9 @@
            </form>
            <div class="info-box-1">
              <h5><span>Or call the agent</span></h5>
-             <p><span class="large-text-1"><span class="iconic-phone-square"></span>0987654321</span> (this is a sample number)</p>
+             <p><span class="large-text-1"><span class="iconic-phone-square"></span>+254 720 789 500</span> </p>
+             <p><span class="large-text-1"><span class="iconic-phone-square"></span>+254 792 746 432</span> </p>
+             <p><span class="large-text-1"><span class="iconic-phone-square"></span>+254 710 999 156</span> </p>
            </div>
          </div>
        </div>

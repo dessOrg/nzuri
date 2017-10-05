@@ -11,7 +11,7 @@
    </ol>
    <div class="title-row heading">
      <div class="col-md-12">
-       <h3>Login To Nzuri Homes</h3>
+       <h3>Upload Property</h3>
      </div>
    </div>
 
@@ -24,7 +24,7 @@
                  <select class="form-control" id="category" name="category" required="true" value="{{ old('category') }}" style="">
                    <option value="">Property Category</option>
                    @foreach($categories as $cat)
-                   <option value="$cat->title">{{$cat->title}}</option>
+                   <option value="{{$cat->title}}">{{$cat->title}}</option>
                    @endforeach
                  </select>
                </div>

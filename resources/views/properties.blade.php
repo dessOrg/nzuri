@@ -78,7 +78,7 @@
     <!-- Search  -->
     <div class="widget widget-search">
       <h4>Advanced Search</h4>
-      <div class="form-content">
+      <div class="form-content"><br>
         <form class="form-1"  role="form" method="POST" action="{{ url('/search') }}">
           {{ csrf_field() }}
 
@@ -113,31 +113,16 @@
     <h4>Contact</h4>
       <div class="widget-content">
        <p>
-        25, dapibus Street, velit <br>
-        California, US <br>
-        Phone: 900 123 3456 <br>
-        Fax: 900 123 3456 <br>
-        Email: <a href="mailto:info@example.com" class="">info@example.com</a>
+        Moi Avenue, Pembe Ndovu<br>
+        Mombasa, Kenya <br>
+        Phone: +254 720 789 500 <br>
+        Line2: +254 792 746 432 <br>
+        Line3: +254 710 999 156 <br>
+        Email: <a href="mailto:info@atlantichomez.com" class="">info@atlantichomez.com</a>
        </p>
       </div>
     </div>
-   <div class="widget get-estimation">
-    <h4>Estimate your home</h4>
-      <form class="pad-top-small" data-parsley-validate>
-       <div class="form-group">
-         <input type="text" placeholder="Name" class="form-control" required name="name">
-       </div>
-       <div class="form-group">
-         <input type="email" placeholder="Email id" class="form-control" required name="email">
-       </div>
-      <div class="form-group clearfix">
-         <button class="pull-right btn btn-primary btn-block hvr-shutter-out-vertical">Get Estimation</button>
-       </div>
-       <div class="form-messges hidden">
-        <p>Form submitted successfully.</p>
-       </div>
-      </form>
-    </div>
+
 
   </aside>
   <!-- Sidebar //  -->

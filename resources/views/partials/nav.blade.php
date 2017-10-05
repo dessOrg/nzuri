@@ -22,7 +22,7 @@
         <li><a href="{{ url('/add-form')}}">Add Home</a></li>
       </ul>
   </li>
-  @if(Auth::user()->role == 'Admin')
+  @elseif(Auth::user()->role == 'Admin')
   <li class="menu-item-has-children"><a href="#">Admin</a>
   <ul class="sub-menu">
         <li><a href="{{ url('/categories')}}">Categories</a></li>
@@ -105,7 +105,7 @@
         <li><a href="{{ url('/add-form')}}">Add Home</a></li>
       </ul>
   </li>
-  @if(Auth::user()->role == 'Admin')
+  @elseif(Auth::user()->role == 'Admin')
   <li class="menu-item-has-children"><a href="#">Admin</a>
   <ul class="sub-menu">
         <li><a href="{{ url('/categories')}}">Categories</a></li>
@@ -116,7 +116,7 @@
   </li>
    @endif
    @endif
-   
+
   @if(Auth::guest())
   <li class="menu-item-has-children"><a href="#">Account</a>
   <ul class="dir-right level-1 sub-menu">

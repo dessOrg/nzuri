@@ -54,8 +54,9 @@ $this->get('/forrent', function () {
 $this->post('/search', function () {
   $type = Input::get('type');
   $cat = Input::get('category');
+  $categories = Category::get();
   $name = Property::where('type','=',$type)->where('category','=',$cat)->get();
-    return view('properties')->with('properties', $name)->with('categories', $cat);
+    return view('properties')->with('properties', $name)->with('categories', $categories);
 });
 
 $this->get('/property{id}', function($id){

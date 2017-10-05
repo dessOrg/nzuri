@@ -6,7 +6,7 @@ use App\Property;
 use App\Callery;
 use App\Banner;
 use App\Category;
-use App\Mail;
+use App\Inquiry;
 use Validator;
 use Auth;
 use App\Http\Requests;

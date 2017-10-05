@@ -48,6 +48,13 @@ $this->get('/forrent', function () {
     return view('properties')->with('properties', $name);
 });
 
+$this->post('/search', function () {
+  $type = Input::get('type');
+  $cat = Input::get('category');
+  $name = Property::where('type','=',$type)->where('category','=',$cat)->get();
+    return view('properties')->with('properties', $name);
+});
+
 $this->get('/property{id}', function($id){
 
     $name = Property::find($id);
@@ -61,6 +68,7 @@ $this->auth();
 
 $this->get('/home', 'HomeController@index');
 $this->get('/users', 'HomeController@users');
+$this->get('/makeadmin{id}', 'HomeController@makeadmin');
 $this->get('/add-form', 'HomeController@add');
 $this->post('/add', 'HomeController@createhome');
 $this->get('/update{id}', 'HomeController@loadhome');

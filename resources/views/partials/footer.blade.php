@@ -7,10 +7,11 @@
       <div class="logo-footer">
       <a href="index.html"><img src="images/logo.jpg"  alt=""></a>
     </div>
-   <img class="logo-tag" src="images/banner-1.jpg" alt="">
+
   </div>
     <div class="row">
       <div class="col-xs-12 widget-content">
+        <img class="logo-tag" src="images/banner-1.jpg" alt="">
   </div>
     </div>
   </div>

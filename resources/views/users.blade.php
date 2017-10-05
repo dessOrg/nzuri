@@ -13,6 +13,7 @@
 
      <main id="main" class="main">
 <!-- Properties Filter -->
+
 <div class="properties-filter">
 
 <!-- Properties Filter -->
@@ -39,6 +40,12 @@
          <td><code>{{ $key->name}}</code></td>
          <td><code>{{ $key->email}}</code></td>
          <td><code>{{ $key->phone}}</code></td>
+         @if(Auth::guest())
+         @else
+           @if(Auth::user()->role == 'sysadmin')
+         <td><a href="{{ url('/makeadmin'.$key->id)}}"><button class="btn btn-default">[Make Admin]</button></a></td>
+           @endif
+         @endif
        </tr>
           @endforeach
      </table>

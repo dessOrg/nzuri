@@ -42,6 +42,16 @@ class HomeController extends Controller
       return view('users')->with('users', $name);
     }
 
+     protected function makeadmin($id) {
+
+       $user_obj = new User();
+       $user_obj->id = $id;
+       $user = User::find($user_obj->id); // Eloquent Model
+       $user->update(['role' => "Admin" ]);
+
+       return Redirect::to('/users');
+     }
+
     public function add()
     {
       $name = Category::get();

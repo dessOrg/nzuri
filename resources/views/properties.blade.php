@@ -20,26 +20,36 @@
     <main id="main" class="main">
    <!-- Properties Filter -->
   <div class="properties-filter">
-  <div class="dropdown filter_menu2">
-    <div class="toggle-prop-menu" data-toggle="dropdown">
-     All Actions
-      <span class="caret"></span>
+    <div class="form-content form-cotent-map">
+          <form class="form-1"  role="form" method="POST" action="{{ url('/search') }}">
+            {{ csrf_field() }}
+
+    <div class="col-md-12">
+    <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+      <select class="form-control" id="category" name="category" required="true" value="{{ old('category') }}" style="">
+        <option value="">Select Category</option>
+        @foreach($categories as $cat)
+        <option value="{{$cat->title}}">{{$cat->title}}</option>
+        @endforeach
+      </select>
     </div>
-    <ul class="dropdown-menu filter_menu">
-     <li role="presentation" data-value="all">All Actions</li>
-     <li role="presentation" data-value="rentals">Rentals (7)</li>
-     <li role="presentation" data-value="sales">Sales (9)</li>
-   </ul>
-  </div>
-  <div class="dropdown filter_menu2">
-    <div class="toggle-prop-menu" data-toggle="dropdown" >
-      City
-      <span class="caret"></span>
     </div>
-   <ul class="dropdown-menu filter_menu" role="menu">
-    <li role="presentation" data-value="all">All Types</li><li role="presentation" data-value="apartments">Apartments (4)</li><li role="presentation" data-value="condos">Condos (1)</li><li role="presentation" data-value="houses">Houses (2)</li><li role="presentation" data-value="industrial">Industrial (1)</li><li role="presentation" data-value="land">Land (2)</li><li role="presentation" data-value="offices">Offices (1)</li><li role="presentation" data-value="retail">Retail (3)</li><li role="presentation" data-value="villas">Villas (2)</li>
-  </ul>
+    <div class="col-md-12">
+    <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+      <select class="form-control" id="typey" name="type" required="true" value="{{ old('type') }}" style="">
+        <option value="">Select Type</option>
+       <option value="Rent">Rent</option>
+        <option value="Sale">Sale</option>
+
+      </select>
+    </div>
+    </div>
+    <div class="col-md-5 pad-top-small">
+      <button class="btn btn-dark btn-large pull-right hvr-shutter-out-vertical">Search</button>
+    </div>
+  </form>
   </div>
+
   </div>
   <!-- Properties Filter -->
   <div class="row-float pad-top-large">

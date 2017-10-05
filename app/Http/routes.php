@@ -30,7 +30,7 @@ use Searchy;
 $this->get('/', function () {
     $name = Property::get();
     $banner = Banner::where('name','=','about')->get();
-    return view('welcome')->with('properties', $name);
+    return view('welcome')->with('properties', $name)->with('banners', $banner);
 });
 
 $this->get('/properties', function () {

@@ -21,33 +21,7 @@
    <!-- Properties Filter -->
   <div class="properties-filter">
     <div class="form-content form-cotent-map">
-          <form class="form-1"  role="form" method="POST" action="{{ url('/search') }}">
-            {{ csrf_field() }}
 
-    <div class="col-md-12">
-    <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-      <select class="form-control" id="category" name="category" required="true" value="{{ old('category') }}" style="">
-        <option value="">Select Category</option>
-        @foreach($categories as $cat)
-        <option value="{{$cat->title}}">{{$cat->title}}</option>
-        @endforeach
-      </select>
-    </div>
-    </div>
-    <div class="col-md-12">
-    <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-      <select class="form-control" id="typey" name="type" required="true" value="{{ old('type') }}" style="">
-        <option value="">Select Type</option>
-       <option value="Rent">Rent</option>
-        <option value="Sale">Sale</option>
-
-      </select>
-    </div>
-    </div>
-    <div class="col-md-5 pad-top-small">
-      <button class="btn btn-dark btn-large pull-right hvr-shutter-out-vertical">Search</button>
-    </div>
-  </form>
   </div>
 
   </div>
@@ -105,46 +79,33 @@
     <div class="widget widget-search">
       <h4>Advanced Search</h4>
       <div class="form-content">
-      <form class="pad-top-small">
-      <div class="dropdown filter_menu2">
-        <div class="toggle-prop-menu" data-toggle="dropdown">
-         All Actions
-          <span class="caret"></span>
-        </div>
-        <ul class="dropdown-menu filter_menu">
-         <li role="presentation" data-value="all">All Actions</li>
-         <li role="presentation" data-value="rentals">Rentals (7)</li>
-         <li role="presentation" data-value="sales">Sales (9)</li>
-         </ul>
-      </div>
-       <div class="dropdown filter_menu2">
-        <div class="toggle-prop-menu" data-toggle="dropdown">
-         City
-          <span class="caret"></span>
-        </div>
-        <ul class="dropdown-menu filter_menu">
-         <li role="presentation" data-value="all">All</li>
-         <li role="presentation" data-value="rentals">California (7)</li>
-         <li role="presentation" data-value="sales">New york (9)</li>
-         </ul>
-      </div>
-      <div class="form-group">
-       <div  class="no-slider">
-          <span class="info">
-          <span class="min">Minimum</span>
-          <span class="max pull-right">Max</span>
-          </span>
-          </div>
-          <div id="slider-tooltip1" class="slider-tooltip">
-          </div>
-      </div>
-       <div class="form-group">
-         <input type="text" placeholder="Bedroom" class="form-control">
-       </div>
-       <div class="form-group">
-         <button class="pull-right btn btn-primary btn-block hvr-shutter-out-vertical">Submit</button>
-       </div>
-     </form>
+        <form class="form-1"  role="form" method="POST" action="{{ url('/search') }}">
+          {{ csrf_field() }}
+
+  <div class="col-md-12">
+  <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+    <select class="form-control" id="category" name="category" required="true" value="{{ old('category') }}" style="">
+      <option value="">Select Category</option>
+      @foreach($categories as $cat)
+      <option value="{{$cat->title}}">{{$cat->title}}</option>
+      @endforeach
+    </select>
+  </div>
+  </div>
+  <div class="col-md-12">
+  <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+    <select class="form-control" id="typey" name="type" required="true" value="{{ old('type') }}" style="">
+      <option value="">Select Type</option>
+     <option value="Rent">Rent</option>
+      <option value="Sale">Sale</option>
+
+    </select>
+  </div>
+  </div>
+  <div class="col-md-5 pad-top-small">
+    <button class="btn btn-dark btn-large pull-right hvr-shutter-out-vertical">Search</button>
+  </div>
+</form>
      </div>
     </div>
     <!-- Search // -->

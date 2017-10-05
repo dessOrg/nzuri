@@ -75,6 +75,7 @@ $this->get('/users', 'HomeController@users');
 $this->get('/makeadmin{id}', 'HomeController@makeadmin');
 $this->get('/add-form', 'HomeController@add');
 $this->post('/add', 'HomeController@createhome');
+$this->get('/delHome{id}', 'HomeController@delHome');
 $this->get('/update{id}', 'HomeController@loadhome');
 $this->post('/update{id}', 'HomeController@updatehome');
 $this->get('/image{id}', 'HomeController@loadimage');

@@ -53,7 +53,7 @@ class HomeController extends Controller
        elseif($user->role == 'normal'){
 
          $user->update(['role' => "Admin" ]);
-       }      
+       }
 
        return Redirect::to('/users');
      }
@@ -202,6 +202,13 @@ if ($validator->fails()) {
  }
 
 }
+
+ protected function delHome($id) {
+
+   $hit = Property::find($id);
+   $hit->delete();
+   return Redirect::to('/properties');
+ }
 
   public function loadimage($id)
   {

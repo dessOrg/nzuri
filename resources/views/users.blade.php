@@ -33,6 +33,7 @@
        <th>Title</th>
        <th>Email</th>
        <th>Mobile No</th>
+       <th>Role</th>
      </tr>
      @foreach($users as $key)
        <tr>
@@ -40,14 +41,13 @@
          <td><code>{{ $key->name}}</code></td>
          <td><code>{{ $key->email}}</code></td>
          <td><code>{{ $key->phone}}</code></td>
+         <td><code>{{ $key->role}}</code></td>
          @if(Auth::guest())
          @else
            @if(Auth::user()->role == 'sysadmin')
-             @if($key->role == 'normal')
-              <td><a href="{{ url('/makeadmin'.$key->id)}}"><button class="btn btn-default">[Make Admin]</button></a></td>
-             @elseif($key->role == 'admin')
-              <td><a href="{{ url('/makeadmin'.$key->id)}}"><button class="btn btn-default">[Make Normal]</button></a></td>
-             @endif
+
+              <td><a href="{{ url('/makeadmin'.$key->id)}}"><button class="btn btn-default">[Change Role]</button></a></td>
+
            @endif
          @endif
        </tr>

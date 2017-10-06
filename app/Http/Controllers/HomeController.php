@@ -7,6 +7,7 @@ use App\Property;
 use App\Callery;
 use App\Category;
 use App\Banner;
+use App\Favorite;
 use Validator;
 use Auth;
 use Illuminate\Support\Facades\Input;
@@ -379,6 +380,25 @@ if ($validator->fails()) {
         $hit->delete();
         return Redirect::to('/loadbanner');
       }
+
+       protected function recFav($id) {
+
+         $fav_obj = new Favorite();
+         $fav_obj->id = $id;
+         $fav = Favorite::find($fav_obj->id); // Eloquent Model
+
+
+           $user->update(['status' => "Received" ]);
+
+
+         return Redirect::to('/favorites');
+       }
+
+       public function favorites()
+       {
+         $name = Favorite::get();
+         return view('emails.favorites')->with('favorites', $name);
+       }
 
 
 

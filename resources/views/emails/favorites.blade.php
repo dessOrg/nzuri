@@ -57,15 +57,24 @@
 
      <tr>
        <th style="width:150px">Action</th>
-       <th>Title</th>
-       <th>Title</th>
-       <th>Title</th>
-       <th>Title</th>
+       <th>Email</th>
+       <th>Phone</th>
+       <th>content</th>
+       <th>Code</th>
+       <th>Receive</th>
      </tr>
-     @foreach($categories as $key)
+     @foreach($favorites as $key)
        <tr>
-         <td><a href="{{ url('/delCategory'.$key->id)}}"><button class="btn btn-default">[Remove]</button></a></td>
-         <td><code>{{ $key->title}}</code></td>
+         <td><a href="{{ url('/delFav'.$key->id)}}"><button class="btn btn-default">[Remove]</button></a></td>
+         <td><code>{{ $key->sender_email}}</code></td>
+         <td><code>{{ $key->phone}}</code></td>
+         <td><code>{{ $key->content}}</code></td>
+         <td><code>{{ $key->code}}</code></td>
+         @if($key-status == 'pending')
+         <td><a href="{{ url('/recFav'.$key->id)}}"><button class="btn btn-default">[Receive]</button></a></td>
+         @else
+         <td><code>{{ $key->status}}</code></td>
+         @endif
        </tr>
           @endforeach
      </table>

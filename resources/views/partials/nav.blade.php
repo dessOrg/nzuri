@@ -20,6 +20,7 @@
         <li><a href="{{ url('/loadbanner')}}">Banners</a></li>
         <li><a href="{{ url('/add-form')}}">Add Home</a></li>
         <li><a href="{{ url('/add-form')}}">Add Home</a></li>
+        <li><a href="{{ url('/favorites')}}">Favorites</a></li>
       </ul>
   </li>
   @elseif(Auth::user()->role == 'Admin')
@@ -29,6 +30,7 @@
         <li><a href="{{ url('/users')}}">Users</a></li>
         <li><a href="{{ url('/loadbanner')}}">Banners</a></li>
         <li><a href="{{ url('/add-form')}}">Add Home</a></li>
+        <li><a href="{{ url('/favorites')}}">Favorites</a></li>
       </ul>
   </li>
    @endif
@@ -103,6 +105,7 @@
         <li><a href="{{ url('/users')}}">Users</a></li>
         <li><a href="{{ url('/loadbanner')}}">Banners</a></li>
         <li><a href="{{ url('/add-form')}}">Add Home</a></li>
+        <li><a href="{{ url('/favorites')}}">Favorites</a></li>
       </ul>
   </li>
   @elseif(Auth::user()->role == 'Admin')
@@ -112,6 +115,7 @@
         <li><a href="{{ url('/users')}}">Users</a></li>
         <li><a href="{{ url('/loadbanner')}}">Banners</a></li>
         <li><a href="{{ url('/add-form')}}">Add Home</a></li>
+        <li><a href="{{ url('/favorites')}}">Favorites</a></li>
       </ul>
   </li>
    @endif

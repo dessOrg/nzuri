@@ -80,7 +80,7 @@
   <div class="header-content">
   <div class="navigation-bar"><div class="container">
       <div class="logo wow flipInX" data-wow-delay="200ms">
-      <a href="index.html"><img src="images/logo.jpeg" height="225" width="130" alt=""></a>
+      <a href="{{ url('/') }}"><img src="images/logo.jpeg" height="225" width="130" alt=""></a>
     </div>
     <div class="navigation">
       <a href="#" class="navigation-button" id="mobileNav">

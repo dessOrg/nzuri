@@ -68,7 +68,7 @@
         <div class="container">
           <div class="properties-descriptions tabs-vertical" role="tabpanel">
             <ul class="nav nav-tabs">
-              <li class="active"><a href="#features" data-toggle="tab">Callery</a></li>
+              <li class="active"><a href="#features" data-toggle="tab">Gallery</a></li>
               <li><a href="#video" data-toggle="tab">VIDEO</a></li>
               <li><a href="#map" data-toggle="tab">MAP</a></li>
             </ul>

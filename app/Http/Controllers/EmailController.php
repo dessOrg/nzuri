@@ -11,6 +11,12 @@ use App\Http\Requests;
 use Request;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Redirect;
+use App\User;
+use App\Property;
+use App\Callery;
+use App\Category;
+use App\Banner;
+use App\Favorite;
 use Mail;
 use Storage;
 use Searchy;
@@ -27,6 +33,7 @@ class EmailController extends Controller
         $sender_phone = Input::get('phone');
         $property_id =  $id;
         $name = Input::get('name');
+        $status = "pending";
 
         // Mail::send('emails.send', ['title' => $title, 'content' => $content], function ($message) use ($sender_email, $name)
         // {
@@ -44,6 +51,7 @@ class EmailController extends Controller
         $favorite->property_id = $property_id;
         $favorite->code = $title;
         $favorite->content = $content;
+        $favorite->status = $status;
         $favorite->save();
 
                // redirect ----------------------------------------

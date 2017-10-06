@@ -12,7 +12,7 @@ class Favorite extends Model
      * @var array
      */
     protected $fillable = [
-        'sender_name', 'sender_email', 'phone', 'code', 'property_id', 'content',
+        'sender_name', 'sender_email', 'phone', 'code', 'property_id', 'content', 'status',
     ];
 
     /**

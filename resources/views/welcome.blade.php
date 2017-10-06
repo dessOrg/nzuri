@@ -12,13 +12,9 @@
         <h2>WELCOME TO ATLANTIC  <br>
         HOMEZ</h2>
         <p>For Your Dream Home</p>
-        <span class="iconic iconic-search"></span>
       </div>
     </div>
     <div class="content-box">
-      <div class="col-md-12">
-      <p class="content-info"><span class="iconic iconic-grid"></span>Grid view</p>
-      </div>
       <!-- Grid view -->
       <div class="grid-box-all row-float pad-top-large">
         @foreach($properties as $key)
@@ -40,7 +36,7 @@
               <span class="meta">   Bath : {{ $key->bath}} </span>
               <span class="meta">   {{ $key->size}} sq ft</span></p>
             <span class="price">Ksh.{{ $key->price}}</span>
-            <a class="link-arrow iconic" href="{{ url('/property'.$key->id)}}">View</a>
+            <a class="link-arrow iconic" href="{{ url('/property'.$key->id)}}"><span style="color:blue">View</span></a>
           </div>
         </div>
         @endforeach
@@ -65,7 +61,7 @@
         about us!
         </h2>
         <p>know more about us before YOU commit</p>
-        <span class="iconic iconic-user2 pink"></span>
+        <span class="iconic pink"><i class="fa fa-user"></i></span>
       </div>
       <img  src="images/icons/icon-home.png" height="227" width="207" alt="">
     </div>
@@ -90,26 +86,11 @@
 </div>
 <!-- Content Section // -->
 <!-- Content Section  -->
-<section class="content-section content-table">
-  <div class="container">
-
-  </div>
-</section>
 <!-- Content Section //  -->
 <!-- Content Section  -->
 
 <!-- Content Section // -->
 <!-- Team -->
-<section class="content-section">
-  <div class="container">
-    <div class="title-row heading">
-    </div>
-    <div class="row pad-top-large">
-    <div class="agents">
-
-    </div>
-  </div>
-</section>
 <!-- Team // -->
 <!-- Footer -->
 @include('partials.footer')

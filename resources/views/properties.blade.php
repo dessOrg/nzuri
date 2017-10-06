@@ -36,7 +36,7 @@
         @else
          <span class="box-type red"><span class="text">Rent</span></span>
         @endif
-          <img src="https://s3.eu-west-1.amazonaws.com/nzuri{{$key->image}}" class="img-responsive" alt="" height="auto" width="360">
+          <a href="{{url('property'. $key->id)}}"><img src="https://s3.eu-west-1.amazonaws.com/nzuri{{$key->image}}" class="img-responsive" alt="" height="auto" width="360"></a>
         </div>
         <div class="description">
           <h3><span class="type">{{$key->category}}:</span>
@@ -47,7 +47,7 @@
             <span class="meta">   Bath : {{$key->bath}} </span>
             <span class="meta">   {{$key->size}} sq ft</span></p>
           <span class="price">Ksh.{{$key->price}}</span>
-          <a class="link-arrow iconic iconic-arrow-forward" href="{{url('property'. $key->id)}}"></a>
+          <a class="link-arrow iconic " href="{{url('property'. $key->id)}}"><i class="fa fa-arrow"></i></a>
         </div>
       </div>
       @endforeach

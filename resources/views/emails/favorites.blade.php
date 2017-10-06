@@ -19,7 +19,7 @@
      <main id="main" class="main">
 <!-- Properties Filter -->
 <div class="properties-filter">
- <div class="form-content form-cotent-map">
+ <!--<div class="form-content form-cotent-map">
    <form class="form-1"  role="form" method="POST" action="{{ url('/category') }}" enctype="multipart/form-data">
      {{ csrf_field() }}
        <div class="row pad-top-large">
@@ -41,7 +41,7 @@
 
        </div>
      </form>
-   </div>
+   </div>-->
 </div>
 <!-- Properties Filter -->
 <div class="row-float pad-top-large">

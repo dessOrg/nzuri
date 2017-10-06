@@ -26,6 +26,7 @@ class EmailController extends Controller
     {
         $title = Input::get('code ');
         $content = Input::get('content');
+        $sender_name = Input::get('name');
         $sender_email = Input::get('email');
         $sender_phone = Input::get('phone');
         $property_id =  $id;

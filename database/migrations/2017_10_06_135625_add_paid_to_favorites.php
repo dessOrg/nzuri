@@ -13,7 +13,7 @@ class AddPaidToFavorites extends Migration
     public function up()
     {
         Schema::table('favorites', function (Blueprint $table) {
-            $table->integer('status')->after(content);
+            $table->integer('status');
         });
     }
 

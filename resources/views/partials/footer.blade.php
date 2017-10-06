@@ -5,7 +5,7 @@
   <div class="footer-widgets-1">
   <div class="logo-footer-row">
       <div class="logo-footer">
-      <a href="index.html"><img src="images/logo.jpg"  alt=""></a>
+      <a href="index.html"><img src="images/logo.jpeg"  alt=""></a>
     </div>
 
   </div>

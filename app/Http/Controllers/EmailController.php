@@ -2,9 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\User;
-use App\Property;
-use App\Callery;
 use Validator;
 use Auth;
 use App\Http\Requests;

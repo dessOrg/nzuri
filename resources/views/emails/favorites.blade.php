@@ -51,12 +51,15 @@
      <div class="row">
        <div class=" col-md-offset-3 col-md-8">
          <div class="alert alert-info">
-       Existing Categories
+       Client Inuiries
        </div>
      <table class="table" style="width:100%">
 
      <tr>
        <th style="width:150px">Action</th>
+       <th>Title</th>
+       <th>Title</th>
+       <th>Title</th>
        <th>Title</th>
      </tr>
      @foreach($categories as $key)

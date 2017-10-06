@@ -45,7 +45,7 @@ class EmailController extends Controller
         $favorite = new Favorite;
         $favorite->sender_name = $sender_name;
         $favorite->sender_email = $sender_email;
-        $favorite->sender_phone = $sender_phone;
+        $favorite->phone = $sender_phone;
         $favorite->property_id = $property_id;
         $favorite->code = $title;
         $favorite->content = $content;

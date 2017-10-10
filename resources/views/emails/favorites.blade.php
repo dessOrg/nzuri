@@ -70,7 +70,7 @@
          <td><code>{{ $key->phone}}</code></td>
          <td><code>{{ $key->content}}</code></td>
          <td><code>{{ $key->code}}</code></td>
-         @if($key-status == 'pending')
+         @if($key->status == 'pending')
          <td><a href="{{ url('/recFav'.$key->id)}}"><button class="btn btn-default">[Receive]</button></a></td>
          @else
          <td><code>{{ $key->status}}</code></td>

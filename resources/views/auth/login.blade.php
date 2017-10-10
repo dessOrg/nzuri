@@ -11,7 +11,7 @@
    </ol>
    <div class="title-row heading">
      <div class="col-md-12">
-       <h3>Login To Nzuri Homes</h3>
+       <h3>Login To Atlantic Homez</h3>
      </div>
    </div>
     <div class="row">

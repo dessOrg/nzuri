@@ -388,7 +388,7 @@ if ($validator->fails()) {
          $fav = Favorite::find($fav_obj->id); // Eloquent Model
 
 
-           $user->update(['status' => "Received" ]);
+           $fav->update(['status' => "Received" ]);
 
 
          return Redirect::to('/favorites');

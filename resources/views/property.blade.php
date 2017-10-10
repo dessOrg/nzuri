@@ -138,7 +138,7 @@
                  </div>
                  <div class="col-md-9">
                  <input type="text" class="form-control input-lg" name="cod" value="{{$property->code}}" placeholder="Enter your place" disabled="true">
-                 <input type="hidden" class="form-control input-lg" name="code" value="{{$property->code}}" placeholder="" >
+                 <input type="hidden" class="form-control input-lg" name="code" value="$property->code" placeholder="" >
                </div>
              </div>
              </div>

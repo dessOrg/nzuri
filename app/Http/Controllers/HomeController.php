@@ -400,6 +400,13 @@ if ($validator->fails()) {
          return view('emails.favorites')->with('favorites', $name);
        }
 
+        protected function delFav($id) {
+
+          $hit = Favorite::find($id);
+          $hit->delete();
+          return Redirect::to('/favorites');
+        }
+
 
 
 

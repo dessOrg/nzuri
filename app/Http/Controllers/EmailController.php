@@ -24,7 +24,7 @@ class EmailController extends Controller
 
      public function sendFavorite(Request $request, $id)
     {
-        $title = Input::get('code ');
+        $title = Input::get('code');
         $content = Input::get('content');
         $sender_name = Input::get('name');
         $sender_email = Input::get('email');

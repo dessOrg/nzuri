@@ -122,22 +122,23 @@
            {{ csrf_field() }}
              <div class="row">
                <div class="col-md-6 form-group-1">
-                 <input type="text" class="form-control input-lg" name="name" placeholder="Name" required="true" name="name">
+                 <input type="text" class="form-control input-lg" name="name" placeholder="Name" required="true">
                </div>
                <div class="col-md-6 form-group-1">
-                 <input type="text" class="form-control input-lg" name="email" placeholder="E-mail " rrequired="true" name="email">
+                 <input type="text" class="form-control input-lg" name="email" placeholder="E-mail " rrequired="true" >
                </div>
              </div>
              <div class="row">
                <div class="col-md-6 form-group-1">
-                 <input type="text" class="form-control input-lg" name="phone" placeholder="Contact no" required="true" data-parsley-min="10" name="contact">
+                 <input type="text" class="form-control input-lg" name="phone" placeholder="Contact no" required="true" data-parsley-min="10" >
                </div>
                <div class="col-md-6 form-group-1">
                  <div class="col-md-3">
                       <label>Property Code:</label>
                  </div>
                  <div class="col-md-9">
-                 <input type="text" class="form-control input-lg" name="code" value="{{$property->code}}" placeholder="Enter your place" required name="location" disabled="true">
+                 <input type="text" class="form-control input-lg" name="cod" value="{{$property->code}}" placeholder="Enter your place" disabled="true">
+                 <input type="hidden" class="form-control input-lg" name="code" value="{{$property->code}}" placeholder="" >
                </div>
              </div>
              </div>

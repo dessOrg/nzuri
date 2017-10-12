@@ -41,7 +41,11 @@
              <a href="{{url('update'.$property->id)}}"><span class="btn btn-primary btn-warning ">Edit</span></a>
              <a href="{{url('image'.$property->id)}}"><span class="btn btn-primary btn-success ">Add Images</span></a>
              <a href="{{url('delHome'.$property->id)}}"><span class="btn btn-primary btn-danger ">Remove</span></a>
-                @endif
+                @elseif(Auth::user()->role === 'admin')
+                <a href="{{url('update'.$property->id)}}"><span class="btn btn-primary btn-warning ">Edit</span></a>
+                <a href="{{url('image'.$property->id)}}"><span class="btn btn-primary btn-success ">Add Images</span></a>
+                <a href="{{url('delHome'.$property->id)}}"><span class="btn btn-primary btn-danger ">Remove</span></a>
+                   @endif
              @endif
 
            </div>

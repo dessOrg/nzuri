@@ -73,15 +73,15 @@
 </div>
 
 </div>
-<div class="sidebar-full-height">
+<!--<div class="sidebar-full-height">
 
 
-  <!-- widget // -->
+  
 
   <div class="sidebar-close-bar visible-xs-block">
     <a href="#" class="iconic iconic-close2"></a>
   </div>
-</div>
+</div>-->
 <!-- sidebar // -->
 <!-- Header  -->
 <header class="main-header header-common" style="background-image: url(images/banner/banner-7.jpg)">

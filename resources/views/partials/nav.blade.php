@@ -16,6 +16,7 @@
     <li><a href="{{ url('/cottage/forrent')}}">Homes For Rent</a></li>
   </ul>
   </li>
+  <li class="menu-item-has-children"><a href="{{ url('/categories')}}">General</a></li>
   @if(Auth::guest())
   @else
   @if(Auth::user()->role == 'sysadmin')
@@ -108,6 +109,7 @@
     <li><a href="{{ url('/cottage/forrent')}}">Homes For Rent</a></li>
   </ul>
   </li>
+  <li class="menu-item-has-children"><a href="{{ url('/categories')}}">General</a></li>
   @if(Auth::guest())
   @else
   @if(Auth::user()->role == 'sysadmin')

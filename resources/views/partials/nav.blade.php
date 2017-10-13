@@ -4,10 +4,16 @@
 </div>
 <ul>
   <li class="menu-item-has-children"><a href="{{ url('/') }}">Home</a></li>
-  <li class="menu-item-has-children"><a href="{{ url('/properties') }}">Homes</a>
+  <li class="menu-item-has-children"><a href="{{ url('/apertments')}}">Apartments/Houses</a>
   <ul class="sub-menu">
-    <li><a href="{{ url('/forsale')}}">Homes For Sale</a></li>
-    <li><a href="{{ url('/forrent')}}">Homes For Rent</a></li>
+    <li><a href="{{ url('/apertments/forsale')}}">Homes For Sale</a></li>
+    <li><a href="{{ url('/apertments/forrent')}}">Homes For Rent</a></li>
+  </ul>
+  </li>
+  <li class="menu-item-has-children"><a href="{{ url('/cottage')}}">Cottages/Holiday Homes</a>
+  <ul class="sub-menu">
+    <li><a href="{{ url('/cottage/forsale')}}">Homes For Sale</a></li>
+    <li><a href="{{ url('/cottage/forrent')}}">Homes For Rent</a></li>
   </ul>
   </li>
   @if(Auth::guest())
@@ -90,10 +96,16 @@
       </a>
        <ul>
   <li class="menu-item-has-children"><a href="{{ url('/')}}">Home</a></li>
-  <li class="menu-item-has-children"><a href="{{ url('/properties')}}">Properties</a>
+  <li class="menu-item-has-children"><a href="{{ url('/apertments')}}">Apartments/Houses</a>
   <ul class="sub-menu">
-    <li><a href="{{ url('/forsale')}}">Homes For Sale</a></li>
-    <li><a href="{{ url('/forrent')}}">Homes For Rent</a></li>
+    <li><a href="{{ url('/apertments/forsale')}}">Homes For Sale</a></li>
+    <li><a href="{{ url('/apertments/forrent')}}">Homes For Rent</a></li>
+  </ul>
+  </li>
+  <li class="menu-item-has-children"><a href="{{ url('/cottage')}}">Cottages/Holiday Homes</a>
+  <ul class="sub-menu">
+    <li><a href="{{ url('/cottage/forsale')}}">Homes For Sale</a></li>
+    <li><a href="{{ url('/cottage/forrent')}}">Homes For Rent</a></li>
   </ul>
   </li>
   @if(Auth::guest())

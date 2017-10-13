@@ -39,14 +39,50 @@ $this->get('/properties', function () {
     return view('properties')->with('properties', $name)->with('categories', $cat);
 });
 
+$this->get('/apertments', function () {
+  $name = Property::where('category','=','Apartments')->get();
+  $cat = Category::get();
+    return view('properties')->with('properties', $name)->with('categories', $cat);
+});
+
+$this->get('/cottage', function () {
+  $name = Property::where('category','=','Cottage')->get();
+  $cat = Category::get();
+    return view('properties')->with('properties', $name)->with('categories', $cat);
+});
+
 $this->get('/forsale', function () {
   $name = Property::where('type','=','Sale')->get();
   $cat = Category::get();
     return view('properties')->with('properties', $name)->with('categories', $cat);
 });
 
+$this->get('/cottage/forsale', function () {
+  $name = Property::where('type','=','Sale')->where('category','=','Cottage')->get();
+  $cat = Category::get();
+    return view('properties')->with('properties', $name)->with('categories', $cat);
+});
+
+$this->get('/apertments/forsale', function () {
+  $name = Property::where('type','=','Sale')->where('category','=','Apartments')->get();
+  $cat = Category::get();
+    return view('properties')->with('properties', $name)->with('categories', $cat);
+});
+
 $this->get('/forrent', function () {
   $name = Property::where('type','=','Rent')->get();
+  $cat = Category::get();
+    return view('properties')->with('properties', $name)->with('categories', $cat);
+});
+
+$this->get('/cottage/forrent', function () {
+  $name = Property::where('type','=','Rent')->where('category','=','Cottage')->get();
+  $cat = Category::get();
+    return view('properties')->with('properties', $name)->with('categories', $cat);
+});
+
+$this->get('/apertments/forrent', function () {
+  $name = Property::where('type','=','Rent')->where('category','=','Apartments')->get();
   $cat = Category::get();
     return view('properties')->with('properties', $name)->with('categories', $cat);
 });

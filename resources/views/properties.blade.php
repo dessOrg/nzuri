@@ -110,7 +110,7 @@
     </div>
     <!-- Search // -->
    <div class="widget">
-    <h4>Contact</h4>
+    <h4>Contacts</h4>
       <div class="widget-content">
        <p>
         Moi Avenue, Pembe Ndovu<br>

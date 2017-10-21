@@ -23,17 +23,36 @@
        <div class="widget">
          <h5>Contact</h5>
          <p>Have any inquiry ? Write us an email and our support team will get back to you as soon as possible.</p>
-         <form data-parsley-validate class="footer-contact">
-           <div class="form-group">
-             <input type="text" placeholder="Name" class="form-control"  required data-parsley-required-message="Please insert your name" name="name">
+         <form class="form-1"  role="form" method="POST" action="{{ url('/inguire') }}" enctype="multipart/form-data">
+         {{ csrf_field() }}
+           <div class="row">
+             <div class="col-md-6 form-group-1">
+               <input type="text" class="form-control input-lg" name="name" placeholder="Name" required="true">
+             </div>
+             <div class="col-md-6 form-group-1">
+               <input type="text" class="form-control input-lg" name="email" placeholder="E-mail " rrequired="true" >
+             </div>
            </div>
-           <div class="form-group">
-             <input type="email" placeholder="Email ID" class="form-control" required data-parsley-required-message="Please insert your name" name="email">
+           <div class="row">
+             <div class="col-md-6 form-group-1">
+               <input type="text" class="form-control input-lg" name="phone" placeholder="Contact no" required="true" data-parsley-min="10" >
+             </div>
+             <div class="col-md-6 form-group-1">
+               <input type="text" class="form-control input-lg" name="cod" value="" placeholder="Enter The Subject">
+
            </div>
-           <div class="form-group">
-             <button class="pull-right btn btn-ghost hvr-shutter-out-vertical">Submit</button>
            </div>
-           <div class="form-messges hideen"></div>
+           <div class="row">
+             <div class="form-group-1 col-md-12">
+               <textarea class="form-control" name="content" placeholder="Enter your questions and queries" rows="3"  required="true" ></textarea>
+             </div>
+           </div>
+           <div class="row pad-top-small">
+             <div class="col-md-12">
+               <button class="btn btn-primary btn-large pull-right">Submit</button>
+             </div>
+           </div>
+
          </form>
        </div>
      </div>

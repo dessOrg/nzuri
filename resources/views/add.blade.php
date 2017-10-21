@@ -5,9 +5,9 @@
  <section class="content-section">
  <div class="container">
    <ol class="breadcrumb">
-         <li><a href="#">Home</a></li>
+         <li><a href="{{ url('/')}}">Home</a></li>
          <li><a href="#">Page</a></li>
-         <li class="active">Login</li>
+         <li class="active">Post</li>
    </ol>
    <div class="title-row heading">
      <div class="col-md-12">
@@ -143,7 +143,7 @@
                <div class="row">
                  <div class="col-md-5">
                  <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                     <textarea id="description" class="form-control ckeditor" name="description" placeholder="Description of the property."></textarea>
+                     <textarea id="description" class="form-control ckeditor" name="description" rows="10" placeholder="Description of the property."></textarea>
 
                         @if ($errors->has('description'))
                           <span class="help-block">

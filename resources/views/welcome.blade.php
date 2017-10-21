@@ -64,6 +64,17 @@
         <span class="iconic pink"><i class="fa fa-user"></i></span>
       </div>
       <img  src="images/icons/icon-home.png" height="227" width="207" alt="">
+       <h4>Contacts</h4>
+         <div class="widget-content">
+          <p>
+           Moi Avenue, Pembe Ndovu<br>
+           Mombasa, Kenya <br>
+           Phone: +254 720 789 500 <br>
+           Line2: +254 792 746 432 <br>
+           Line3: +254 710 999 156 <br>
+           Email: <a href="mailto:info@atlantichomez.com" class="">info@atlantichomez.com</a>
+          </p>
+         </div>
     </div>
     <div class="col-md-6 col-md-push-1">
       @foreach($banners as $key)
